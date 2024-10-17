@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Processador">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Processador|BUSMUX:inst10|lpm_mux:$00000" CBX_FILE_NAME="mux_smc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Processador|Mem_Rom:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_q671.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,696 @@
+Simulator report for Stack_Reg
+Thu May 12 16:09:35 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 342 nodes    ;
+; Simulation Coverage         ;      56.14 % ;
+; Total Number of Transitions ; 10821        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                             ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Option                                                                                     ; Setting           ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+; Simulation mode                                                                            ; Functional        ; Timing        ;
+; Start time                                                                                 ; 0 ns              ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF              ;               ;
+; Vector input source                                                                        ; Stack_RegWave.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                ; On            ;
+; Check outputs                                                                              ; Off               ; Off           ;
+; Report simulation coverage                                                                 ; On                ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                ; On            ;
+; Display missing 1-value coverage report                                                    ; On                ; On            ;
+; Display missing 0-value coverage report                                                    ; On                ; On            ;
+; Detect setup and hold time violations                                                      ; Off               ; Off           ;
+; Detect glitches                                                                            ; Off               ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off               ; Off           ;
+; Generate Signal Activity File                                                              ; Off               ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off               ; Off           ;
+; Group bus channels in simulation results                                                   ; Off               ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE        ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off               ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto              ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      56.14 % ;
+; Total nodes checked                                 ; 342          ;
+; Total output ports checked                          ; 342          ;
+; Total output ports with complete 1/0-value coverage ; 192          ;
+; Total output ports with no 1/0-value coverage       ; 130          ;
+; Total output ports with no 1-value coverage         ; 130          ;
+; Total output ports with no 0-value coverage         ; 150          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                          ;
++-------------------------+-------------------------+------------------+
+; Node Name               ; Output Port Name        ; Output Port Type ;
++-------------------------+-------------------------+------------------+
+; |Stack_Reg|PilhaPos1~6  ; |Stack_Reg|PilhaPos1~6  ; out              ;
+; |Stack_Reg|PilhaPos1~7  ; |Stack_Reg|PilhaPos1~7  ; out              ;
+; |Stack_Reg|PilhaPos1~8  ; |Stack_Reg|PilhaPos1~8  ; out              ;
+; |Stack_Reg|PilhaPos1~9  ; |Stack_Reg|PilhaPos1~9  ; out              ;
+; |Stack_Reg|PilhaPos1~10 ; |Stack_Reg|PilhaPos1~10 ; out              ;
+; |Stack_Reg|PilhaPos1~11 ; |Stack_Reg|PilhaPos1~11 ; out              ;
+; |Stack_Reg|PilhaPos1~12 ; |Stack_Reg|PilhaPos1~12 ; out              ;
+; |Stack_Reg|PilhaPos1~19 ; |Stack_Reg|PilhaPos1~19 ; out              ;
+; |Stack_Reg|PilhaPos1~20 ; |Stack_Reg|PilhaPos1~20 ; out              ;
+; |Stack_Reg|PilhaPos1~21 ; |Stack_Reg|PilhaPos1~21 ; out              ;
+; |Stack_Reg|PilhaPos1~22 ; |Stack_Reg|PilhaPos1~22 ; out              ;
+; |Stack_Reg|PilhaPos1~23 ; |Stack_Reg|PilhaPos1~23 ; out              ;
+; |Stack_Reg|PilhaPos1~24 ; |Stack_Reg|PilhaPos1~24 ; out              ;
+; |Stack_Reg|PilhaPos1~25 ; |Stack_Reg|PilhaPos1~25 ; out              ;
+; |Stack_Reg|PilhaPos2~6  ; |Stack_Reg|PilhaPos2~6  ; out              ;
+; |Stack_Reg|PilhaPos2~7  ; |Stack_Reg|PilhaPos2~7  ; out              ;
+; |Stack_Reg|PilhaPos2~8  ; |Stack_Reg|PilhaPos2~8  ; out              ;
+; |Stack_Reg|PilhaPos2~9  ; |Stack_Reg|PilhaPos2~9  ; out              ;
+; |Stack_Reg|PilhaPos2~10 ; |Stack_Reg|PilhaPos2~10 ; out              ;
+; |Stack_Reg|PilhaPos2~11 ; |Stack_Reg|PilhaPos2~11 ; out              ;
+; |Stack_Reg|PilhaPos2~12 ; |Stack_Reg|PilhaPos2~12 ; out              ;
+; |Stack_Reg|PilhaPos2~19 ; |Stack_Reg|PilhaPos2~19 ; out              ;
+; |Stack_Reg|PilhaPos2~20 ; |Stack_Reg|PilhaPos2~20 ; out              ;
+; |Stack_Reg|PilhaPos2~21 ; |Stack_Reg|PilhaPos2~21 ; out              ;
+; |Stack_Reg|PilhaPos2~22 ; |Stack_Reg|PilhaPos2~22 ; out              ;
+; |Stack_Reg|PilhaPos2~23 ; |Stack_Reg|PilhaPos2~23 ; out              ;
+; |Stack_Reg|PilhaPos2~24 ; |Stack_Reg|PilhaPos2~24 ; out              ;
+; |Stack_Reg|PilhaPos2~25 ; |Stack_Reg|PilhaPos2~25 ; out              ;
+; |Stack_Reg|PilhaPos3~5  ; |Stack_Reg|PilhaPos3~5  ; out              ;
+; |Stack_Reg|PilhaPos3~6  ; |Stack_Reg|PilhaPos3~6  ; out              ;
+; |Stack_Reg|PilhaPos3~7  ; |Stack_Reg|PilhaPos3~7  ; out              ;
+; |Stack_Reg|PilhaPos3~8  ; |Stack_Reg|PilhaPos3~8  ; out              ;
+; |Stack_Reg|PilhaPos3~9  ; |Stack_Reg|PilhaPos3~9  ; out              ;
+; |Stack_Reg|PilhaPos3~10 ; |Stack_Reg|PilhaPos3~10 ; out              ;
+; |Stack_Reg|PilhaPos3~11 ; |Stack_Reg|PilhaPos3~11 ; out              ;
+; |Stack_Reg|PilhaPos3~12 ; |Stack_Reg|PilhaPos3~12 ; out              ;
+; |Stack_Reg|PilhaPos3~18 ; |Stack_Reg|PilhaPos3~18 ; out              ;
+; |Stack_Reg|PilhaPos3~19 ; |Stack_Reg|PilhaPos3~19 ; out              ;
+; |Stack_Reg|PilhaPos3~20 ; |Stack_Reg|PilhaPos3~20 ; out              ;
+; |Stack_Reg|PilhaPos3~21 ; |Stack_Reg|PilhaPos3~21 ; out              ;
+; |Stack_Reg|PilhaPos3~22 ; |Stack_Reg|PilhaPos3~22 ; out              ;
+; |Stack_Reg|PilhaPos3~23 ; |Stack_Reg|PilhaPos3~23 ; out              ;
+; |Stack_Reg|PilhaPos3~24 ; |Stack_Reg|PilhaPos3~24 ; out              ;
+; |Stack_Reg|PilhaPos3~25 ; |Stack_Reg|PilhaPos3~25 ; out              ;
+; |Stack_Reg|PilhaPos4~6  ; |Stack_Reg|PilhaPos4~6  ; out              ;
+; |Stack_Reg|PilhaPos4~7  ; |Stack_Reg|PilhaPos4~7  ; out              ;
+; |Stack_Reg|PilhaPos4~8  ; |Stack_Reg|PilhaPos4~8  ; out              ;
+; |Stack_Reg|PilhaPos4~9  ; |Stack_Reg|PilhaPos4~9  ; out              ;
+; |Stack_Reg|PilhaPos4~10 ; |Stack_Reg|PilhaPos4~10 ; out              ;
+; |Stack_Reg|PilhaPos4~11 ; |Stack_Reg|PilhaPos4~11 ; out              ;
+; |Stack_Reg|PilhaPos4~12 ; |Stack_Reg|PilhaPos4~12 ; out              ;
+; |Stack_Reg|PilhaPos4~19 ; |Stack_Reg|PilhaPos4~19 ; out              ;
+; |Stack_Reg|PilhaPos4~20 ; |Stack_Reg|PilhaPos4~20 ; out              ;
+; |Stack_Reg|PilhaPos4~21 ; |Stack_Reg|PilhaPos4~21 ; out              ;
+; |Stack_Reg|PilhaPos4~22 ; |Stack_Reg|PilhaPos4~22 ; out              ;
+; |Stack_Reg|PilhaPos4~23 ; |Stack_Reg|PilhaPos4~23 ; out              ;
+; |Stack_Reg|PilhaPos4~24 ; |Stack_Reg|PilhaPos4~24 ; out              ;
+; |Stack_Reg|PilhaPos4~25 ; |Stack_Reg|PilhaPos4~25 ; out              ;
+; |Stack_Reg|PilhaPos5~5  ; |Stack_Reg|PilhaPos5~5  ; out              ;
+; |Stack_Reg|PilhaPos5~6  ; |Stack_Reg|PilhaPos5~6  ; out              ;
+; |Stack_Reg|PilhaPos5~7  ; |Stack_Reg|PilhaPos5~7  ; out              ;
+; |Stack_Reg|PilhaPos5~8  ; |Stack_Reg|PilhaPos5~8  ; out              ;
+; |Stack_Reg|PilhaPos5~9  ; |Stack_Reg|PilhaPos5~9  ; out              ;
+; |Stack_Reg|PilhaPos5~10 ; |Stack_Reg|PilhaPos5~10 ; out              ;
+; |Stack_Reg|PilhaPos5~11 ; |Stack_Reg|PilhaPos5~11 ; out              ;
+; |Stack_Reg|PilhaPos5~12 ; |Stack_Reg|PilhaPos5~12 ; out              ;
+; |Stack_Reg|PilhaPos5~18 ; |Stack_Reg|PilhaPos5~18 ; out              ;
+; |Stack_Reg|PilhaPos5~19 ; |Stack_Reg|PilhaPos5~19 ; out              ;
+; |Stack_Reg|PilhaPos5~20 ; |Stack_Reg|PilhaPos5~20 ; out              ;
+; |Stack_Reg|PilhaPos5~21 ; |Stack_Reg|PilhaPos5~21 ; out              ;
+; |Stack_Reg|PilhaPos5~22 ; |Stack_Reg|PilhaPos5~22 ; out              ;
+; |Stack_Reg|PilhaPos5~23 ; |Stack_Reg|PilhaPos5~23 ; out              ;
+; |Stack_Reg|PilhaPos5~24 ; |Stack_Reg|PilhaPos5~24 ; out              ;
+; |Stack_Reg|PilhaPos5~25 ; |Stack_Reg|PilhaPos5~25 ; out              ;
+; |Stack_Reg|PilhaPos6~6  ; |Stack_Reg|PilhaPos6~6  ; out              ;
+; |Stack_Reg|PilhaPos6~7  ; |Stack_Reg|PilhaPos6~7  ; out              ;
+; |Stack_Reg|PilhaPos6~8  ; |Stack_Reg|PilhaPos6~8  ; out              ;
+; |Stack_Reg|PilhaPos6~9  ; |Stack_Reg|PilhaPos6~9  ; out              ;
+; |Stack_Reg|PilhaPos6~10 ; |Stack_Reg|PilhaPos6~10 ; out              ;
+; |Stack_Reg|PilhaPos6~11 ; |Stack_Reg|PilhaPos6~11 ; out              ;
+; |Stack_Reg|PilhaPos6~12 ; |Stack_Reg|PilhaPos6~12 ; out              ;
+; |Stack_Reg|PilhaPos6~19 ; |Stack_Reg|PilhaPos6~19 ; out              ;
+; |Stack_Reg|PilhaPos6~20 ; |Stack_Reg|PilhaPos6~20 ; out              ;
+; |Stack_Reg|PilhaPos6~21 ; |Stack_Reg|PilhaPos6~21 ; out              ;
+; |Stack_Reg|PilhaPos6~22 ; |Stack_Reg|PilhaPos6~22 ; out              ;
+; |Stack_Reg|PilhaPos6~23 ; |Stack_Reg|PilhaPos6~23 ; out              ;
+; |Stack_Reg|PilhaPos6~24 ; |Stack_Reg|PilhaPos6~24 ; out              ;
+; |Stack_Reg|PilhaPos6~25 ; |Stack_Reg|PilhaPos6~25 ; out              ;
+; |Stack_Reg|PilhaPos7~5  ; |Stack_Reg|PilhaPos7~5  ; out              ;
+; |Stack_Reg|PilhaPos7~6  ; |Stack_Reg|PilhaPos7~6  ; out              ;
+; |Stack_Reg|PilhaPos7~7  ; |Stack_Reg|PilhaPos7~7  ; out              ;
+; |Stack_Reg|PilhaPos7~8  ; |Stack_Reg|PilhaPos7~8  ; out              ;
+; |Stack_Reg|PilhaPos7~9  ; |Stack_Reg|PilhaPos7~9  ; out              ;
+; |Stack_Reg|PilhaPos7~10 ; |Stack_Reg|PilhaPos7~10 ; out              ;
+; |Stack_Reg|PilhaPos7~11 ; |Stack_Reg|PilhaPos7~11 ; out              ;
+; |Stack_Reg|PilhaPos7~12 ; |Stack_Reg|PilhaPos7~12 ; out              ;
+; |Stack_Reg|PilhaPos7~18 ; |Stack_Reg|PilhaPos7~18 ; out              ;
+; |Stack_Reg|PilhaPos7~19 ; |Stack_Reg|PilhaPos7~19 ; out              ;
+; |Stack_Reg|PilhaPos7~20 ; |Stack_Reg|PilhaPos7~20 ; out              ;
+; |Stack_Reg|PilhaPos7~21 ; |Stack_Reg|PilhaPos7~21 ; out              ;
+; |Stack_Reg|PilhaPos7~22 ; |Stack_Reg|PilhaPos7~22 ; out              ;
+; |Stack_Reg|PilhaPos7~23 ; |Stack_Reg|PilhaPos7~23 ; out              ;
+; |Stack_Reg|PilhaPos7~24 ; |Stack_Reg|PilhaPos7~24 ; out              ;
+; |Stack_Reg|PilhaPos7~25 ; |Stack_Reg|PilhaPos7~25 ; out              ;
+; |Stack_Reg|PilhaPos8~6  ; |Stack_Reg|PilhaPos8~6  ; out              ;
+; |Stack_Reg|PilhaPos8~7  ; |Stack_Reg|PilhaPos8~7  ; out              ;
+; |Stack_Reg|PilhaPos8~8  ; |Stack_Reg|PilhaPos8~8  ; out              ;
+; |Stack_Reg|PilhaPos8~9  ; |Stack_Reg|PilhaPos8~9  ; out              ;
+; |Stack_Reg|PilhaPos8~10 ; |Stack_Reg|PilhaPos8~10 ; out              ;
+; |Stack_Reg|PilhaPos8~11 ; |Stack_Reg|PilhaPos8~11 ; out              ;
+; |Stack_Reg|PilhaPos8~12 ; |Stack_Reg|PilhaPos8~12 ; out              ;
+; |Stack_Reg|PilhaPos8~19 ; |Stack_Reg|PilhaPos8~19 ; out              ;
+; |Stack_Reg|PilhaPos8~20 ; |Stack_Reg|PilhaPos8~20 ; out              ;
+; |Stack_Reg|PilhaPos8~21 ; |Stack_Reg|PilhaPos8~21 ; out              ;
+; |Stack_Reg|PilhaPos8~22 ; |Stack_Reg|PilhaPos8~22 ; out              ;
+; |Stack_Reg|PilhaPos8~23 ; |Stack_Reg|PilhaPos8~23 ; out              ;
+; |Stack_Reg|PilhaPos8~24 ; |Stack_Reg|PilhaPos8~24 ; out              ;
+; |Stack_Reg|PilhaPos8~25 ; |Stack_Reg|PilhaPos8~25 ; out              ;
+; |Stack_Reg|PilhaPos1[6] ; |Stack_Reg|PilhaPos1[6] ; regout           ;
+; |Stack_Reg|PilhaPos1[5] ; |Stack_Reg|PilhaPos1[5] ; regout           ;
+; |Stack_Reg|PilhaPos1[4] ; |Stack_Reg|PilhaPos1[4] ; regout           ;
+; |Stack_Reg|PilhaPos1[3] ; |Stack_Reg|PilhaPos1[3] ; regout           ;
+; |Stack_Reg|PilhaPos1[2] ; |Stack_Reg|PilhaPos1[2] ; regout           ;
+; |Stack_Reg|PilhaPos1[1] ; |Stack_Reg|PilhaPos1[1] ; regout           ;
+; |Stack_Reg|PilhaPos1[0] ; |Stack_Reg|PilhaPos1[0] ; regout           ;
+; |Stack_Reg|PilhaPos2[6] ; |Stack_Reg|PilhaPos2[6] ; regout           ;
+; |Stack_Reg|PilhaPos2[5] ; |Stack_Reg|PilhaPos2[5] ; regout           ;
+; |Stack_Reg|PilhaPos2[4] ; |Stack_Reg|PilhaPos2[4] ; regout           ;
+; |Stack_Reg|PilhaPos2[3] ; |Stack_Reg|PilhaPos2[3] ; regout           ;
+; |Stack_Reg|PilhaPos2[2] ; |Stack_Reg|PilhaPos2[2] ; regout           ;
+; |Stack_Reg|PilhaPos2[1] ; |Stack_Reg|PilhaPos2[1] ; regout           ;
+; |Stack_Reg|PilhaPos2[0] ; |Stack_Reg|PilhaPos2[0] ; regout           ;
+; |Stack_Reg|PilhaPos3[6] ; |Stack_Reg|PilhaPos3[6] ; regout           ;
+; |Stack_Reg|PilhaPos3[5] ; |Stack_Reg|PilhaPos3[5] ; regout           ;
+; |Stack_Reg|PilhaPos3[4] ; |Stack_Reg|PilhaPos3[4] ; regout           ;
+; |Stack_Reg|PilhaPos3[3] ; |Stack_Reg|PilhaPos3[3] ; regout           ;
+; |Stack_Reg|PilhaPos3[2] ; |Stack_Reg|PilhaPos3[2] ; regout           ;
+; |Stack_Reg|PilhaPos3[1] ; |Stack_Reg|PilhaPos3[1] ; regout           ;
+; |Stack_Reg|PilhaPos3[0] ; |Stack_Reg|PilhaPos3[0] ; regout           ;
+; |Stack_Reg|PilhaPos4[6] ; |Stack_Reg|PilhaPos4[6] ; regout           ;
+; |Stack_Reg|PilhaPos4[5] ; |Stack_Reg|PilhaPos4[5] ; regout           ;
+; |Stack_Reg|PilhaPos4[4] ; |Stack_Reg|PilhaPos4[4] ; regout           ;
+; |Stack_Reg|PilhaPos4[3] ; |Stack_Reg|PilhaPos4[3] ; regout           ;
+; |Stack_Reg|PilhaPos4[2] ; |Stack_Reg|PilhaPos4[2] ; regout           ;
+; |Stack_Reg|PilhaPos4[1] ; |Stack_Reg|PilhaPos4[1] ; regout           ;
+; |Stack_Reg|PilhaPos4[0] ; |Stack_Reg|PilhaPos4[0] ; regout           ;
+; |Stack_Reg|PilhaPos5[6] ; |Stack_Reg|PilhaPos5[6] ; regout           ;
+; |Stack_Reg|PilhaPos5[5] ; |Stack_Reg|PilhaPos5[5] ; regout           ;
+; |Stack_Reg|PilhaPos5[4] ; |Stack_Reg|PilhaPos5[4] ; regout           ;
+; |Stack_Reg|PilhaPos5[3] ; |Stack_Reg|PilhaPos5[3] ; regout           ;
+; |Stack_Reg|PilhaPos5[2] ; |Stack_Reg|PilhaPos5[2] ; regout           ;
+; |Stack_Reg|PilhaPos5[1] ; |Stack_Reg|PilhaPos5[1] ; regout           ;
+; |Stack_Reg|PilhaPos5[0] ; |Stack_Reg|PilhaPos5[0] ; regout           ;
+; |Stack_Reg|PilhaPos6[6] ; |Stack_Reg|PilhaPos6[6] ; regout           ;
+; |Stack_Reg|PilhaPos6[5] ; |Stack_Reg|PilhaPos6[5] ; regout           ;
+; |Stack_Reg|PilhaPos6[4] ; |Stack_Reg|PilhaPos6[4] ; regout           ;
+; |Stack_Reg|PilhaPos6[3] ; |Stack_Reg|PilhaPos6[3] ; regout           ;
+; |Stack_Reg|PilhaPos6[2] ; |Stack_Reg|PilhaPos6[2] ; regout           ;
+; |Stack_Reg|PilhaPos6[1] ; |Stack_Reg|PilhaPos6[1] ; regout           ;
+; |Stack_Reg|PilhaPos6[0] ; |Stack_Reg|PilhaPos6[0] ; regout           ;
+; |Stack_Reg|PilhaPos7[6] ; |Stack_Reg|PilhaPos7[6] ; regout           ;
+; |Stack_Reg|PilhaPos7[5] ; |Stack_Reg|PilhaPos7[5] ; regout           ;
+; |Stack_Reg|PilhaPos7[4] ; |Stack_Reg|PilhaPos7[4] ; regout           ;
+; |Stack_Reg|PilhaPos7[3] ; |Stack_Reg|PilhaPos7[3] ; regout           ;
+; |Stack_Reg|PilhaPos7[2] ; |Stack_Reg|PilhaPos7[2] ; regout           ;
+; |Stack_Reg|PilhaPos7[1] ; |Stack_Reg|PilhaPos7[1] ; regout           ;
+; |Stack_Reg|PilhaPos7[0] ; |Stack_Reg|PilhaPos7[0] ; regout           ;
+; |Stack_Reg|PilhaPos8[6] ; |Stack_Reg|PilhaPos8[6] ; regout           ;
+; |Stack_Reg|PilhaPos8[5] ; |Stack_Reg|PilhaPos8[5] ; regout           ;
+; |Stack_Reg|PilhaPos8[4] ; |Stack_Reg|PilhaPos8[4] ; regout           ;
+; |Stack_Reg|PilhaPos8[3] ; |Stack_Reg|PilhaPos8[3] ; regout           ;
+; |Stack_Reg|PilhaPos8[2] ; |Stack_Reg|PilhaPos8[2] ; regout           ;
+; |Stack_Reg|PilhaPos8[1] ; |Stack_Reg|PilhaPos8[1] ; regout           ;
+; |Stack_Reg|PilhaPos8[0] ; |Stack_Reg|PilhaPos8[0] ; regout           ;
+; |Stack_Reg|stack_in[0]  ; |Stack_Reg|stack_in[0]  ; out              ;
+; |Stack_Reg|stack_in[1]  ; |Stack_Reg|stack_in[1]  ; out              ;
+; |Stack_Reg|stack_in[2]  ; |Stack_Reg|stack_in[2]  ; out              ;
+; |Stack_Reg|stack_in[3]  ; |Stack_Reg|stack_in[3]  ; out              ;
+; |Stack_Reg|stack_in[4]  ; |Stack_Reg|stack_in[4]  ; out              ;
+; |Stack_Reg|stack_in[5]  ; |Stack_Reg|stack_in[5]  ; out              ;
+; |Stack_Reg|stack_in[6]  ; |Stack_Reg|stack_in[6]  ; out              ;
+; |Stack_Reg|clk_in       ; |Stack_Reg|clk_in       ; out              ;
+; |Stack_Reg|nrst         ; |Stack_Reg|nrst         ; out              ;
+; |Stack_Reg|stack_push   ; |Stack_Reg|stack_push   ; out              ;
+; |Stack_Reg|stack_pop    ; |Stack_Reg|stack_pop    ; out              ;
+; |Stack_Reg|stack_out[0] ; |Stack_Reg|stack_out[0] ; pin_out          ;
+; |Stack_Reg|stack_out[1] ; |Stack_Reg|stack_out[1] ; pin_out          ;
+; |Stack_Reg|stack_out[2] ; |Stack_Reg|stack_out[2] ; pin_out          ;
+; |Stack_Reg|stack_out[3] ; |Stack_Reg|stack_out[3] ; pin_out          ;
+; |Stack_Reg|stack_out[4] ; |Stack_Reg|stack_out[4] ; pin_out          ;
+; |Stack_Reg|stack_out[5] ; |Stack_Reg|stack_out[5] ; pin_out          ;
+; |Stack_Reg|stack_out[6] ; |Stack_Reg|stack_out[6] ; pin_out          ;
++-------------------------+-------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                               ;
++--------------------------+--------------------------+------------------+
+; Node Name                ; Output Port Name         ; Output Port Type ;
++--------------------------+--------------------------+------------------+
+; |Stack_Reg|PilhaPos1~0   ; |Stack_Reg|PilhaPos1~0   ; out              ;
+; |Stack_Reg|PilhaPos1~1   ; |Stack_Reg|PilhaPos1~1   ; out              ;
+; |Stack_Reg|PilhaPos1~2   ; |Stack_Reg|PilhaPos1~2   ; out              ;
+; |Stack_Reg|PilhaPos1~3   ; |Stack_Reg|PilhaPos1~3   ; out              ;
+; |Stack_Reg|PilhaPos1~4   ; |Stack_Reg|PilhaPos1~4   ; out              ;
+; |Stack_Reg|PilhaPos1~13  ; |Stack_Reg|PilhaPos1~13  ; out              ;
+; |Stack_Reg|PilhaPos1~14  ; |Stack_Reg|PilhaPos1~14  ; out              ;
+; |Stack_Reg|PilhaPos1~15  ; |Stack_Reg|PilhaPos1~15  ; out              ;
+; |Stack_Reg|PilhaPos1~16  ; |Stack_Reg|PilhaPos1~16  ; out              ;
+; |Stack_Reg|PilhaPos1~17  ; |Stack_Reg|PilhaPos1~17  ; out              ;
+; |Stack_Reg|PilhaPos2~0   ; |Stack_Reg|PilhaPos2~0   ; out              ;
+; |Stack_Reg|PilhaPos2~1   ; |Stack_Reg|PilhaPos2~1   ; out              ;
+; |Stack_Reg|PilhaPos2~2   ; |Stack_Reg|PilhaPos2~2   ; out              ;
+; |Stack_Reg|PilhaPos2~3   ; |Stack_Reg|PilhaPos2~3   ; out              ;
+; |Stack_Reg|PilhaPos2~4   ; |Stack_Reg|PilhaPos2~4   ; out              ;
+; |Stack_Reg|PilhaPos2~13  ; |Stack_Reg|PilhaPos2~13  ; out              ;
+; |Stack_Reg|PilhaPos2~14  ; |Stack_Reg|PilhaPos2~14  ; out              ;
+; |Stack_Reg|PilhaPos2~15  ; |Stack_Reg|PilhaPos2~15  ; out              ;
+; |Stack_Reg|PilhaPos2~16  ; |Stack_Reg|PilhaPos2~16  ; out              ;
+; |Stack_Reg|PilhaPos2~17  ; |Stack_Reg|PilhaPos2~17  ; out              ;
+; |Stack_Reg|PilhaPos3~0   ; |Stack_Reg|PilhaPos3~0   ; out              ;
+; |Stack_Reg|PilhaPos3~1   ; |Stack_Reg|PilhaPos3~1   ; out              ;
+; |Stack_Reg|PilhaPos3~2   ; |Stack_Reg|PilhaPos3~2   ; out              ;
+; |Stack_Reg|PilhaPos3~3   ; |Stack_Reg|PilhaPos3~3   ; out              ;
+; |Stack_Reg|PilhaPos3~4   ; |Stack_Reg|PilhaPos3~4   ; out              ;
+; |Stack_Reg|PilhaPos3~13  ; |Stack_Reg|PilhaPos3~13  ; out              ;
+; |Stack_Reg|PilhaPos3~14  ; |Stack_Reg|PilhaPos3~14  ; out              ;
+; |Stack_Reg|PilhaPos3~15  ; |Stack_Reg|PilhaPos3~15  ; out              ;
+; |Stack_Reg|PilhaPos3~16  ; |Stack_Reg|PilhaPos3~16  ; out              ;
+; |Stack_Reg|PilhaPos3~17  ; |Stack_Reg|PilhaPos3~17  ; out              ;
+; |Stack_Reg|PilhaPos4~0   ; |Stack_Reg|PilhaPos4~0   ; out              ;
+; |Stack_Reg|PilhaPos4~1   ; |Stack_Reg|PilhaPos4~1   ; out              ;
+; |Stack_Reg|PilhaPos4~2   ; |Stack_Reg|PilhaPos4~2   ; out              ;
+; |Stack_Reg|PilhaPos4~3   ; |Stack_Reg|PilhaPos4~3   ; out              ;
+; |Stack_Reg|PilhaPos4~4   ; |Stack_Reg|PilhaPos4~4   ; out              ;
+; |Stack_Reg|PilhaPos4~13  ; |Stack_Reg|PilhaPos4~13  ; out              ;
+; |Stack_Reg|PilhaPos4~14  ; |Stack_Reg|PilhaPos4~14  ; out              ;
+; |Stack_Reg|PilhaPos4~15  ; |Stack_Reg|PilhaPos4~15  ; out              ;
+; |Stack_Reg|PilhaPos4~16  ; |Stack_Reg|PilhaPos4~16  ; out              ;
+; |Stack_Reg|PilhaPos4~17  ; |Stack_Reg|PilhaPos4~17  ; out              ;
+; |Stack_Reg|PilhaPos5~0   ; |Stack_Reg|PilhaPos5~0   ; out              ;
+; |Stack_Reg|PilhaPos5~1   ; |Stack_Reg|PilhaPos5~1   ; out              ;
+; |Stack_Reg|PilhaPos5~2   ; |Stack_Reg|PilhaPos5~2   ; out              ;
+; |Stack_Reg|PilhaPos5~3   ; |Stack_Reg|PilhaPos5~3   ; out              ;
+; |Stack_Reg|PilhaPos5~4   ; |Stack_Reg|PilhaPos5~4   ; out              ;
+; |Stack_Reg|PilhaPos5~13  ; |Stack_Reg|PilhaPos5~13  ; out              ;
+; |Stack_Reg|PilhaPos5~14  ; |Stack_Reg|PilhaPos5~14  ; out              ;
+; |Stack_Reg|PilhaPos5~15  ; |Stack_Reg|PilhaPos5~15  ; out              ;
+; |Stack_Reg|PilhaPos5~16  ; |Stack_Reg|PilhaPos5~16  ; out              ;
+; |Stack_Reg|PilhaPos5~17  ; |Stack_Reg|PilhaPos5~17  ; out              ;
+; |Stack_Reg|PilhaPos6~0   ; |Stack_Reg|PilhaPos6~0   ; out              ;
+; |Stack_Reg|PilhaPos6~1   ; |Stack_Reg|PilhaPos6~1   ; out              ;
+; |Stack_Reg|PilhaPos6~2   ; |Stack_Reg|PilhaPos6~2   ; out              ;
+; |Stack_Reg|PilhaPos6~3   ; |Stack_Reg|PilhaPos6~3   ; out              ;
+; |Stack_Reg|PilhaPos6~4   ; |Stack_Reg|PilhaPos6~4   ; out              ;
+; |Stack_Reg|PilhaPos6~13  ; |Stack_Reg|PilhaPos6~13  ; out              ;
+; |Stack_Reg|PilhaPos6~14  ; |Stack_Reg|PilhaPos6~14  ; out              ;
+; |Stack_Reg|PilhaPos6~15  ; |Stack_Reg|PilhaPos6~15  ; out              ;
+; |Stack_Reg|PilhaPos6~16  ; |Stack_Reg|PilhaPos6~16  ; out              ;
+; |Stack_Reg|PilhaPos6~17  ; |Stack_Reg|PilhaPos6~17  ; out              ;
+; |Stack_Reg|PilhaPos7~0   ; |Stack_Reg|PilhaPos7~0   ; out              ;
+; |Stack_Reg|PilhaPos7~1   ; |Stack_Reg|PilhaPos7~1   ; out              ;
+; |Stack_Reg|PilhaPos7~2   ; |Stack_Reg|PilhaPos7~2   ; out              ;
+; |Stack_Reg|PilhaPos7~3   ; |Stack_Reg|PilhaPos7~3   ; out              ;
+; |Stack_Reg|PilhaPos7~4   ; |Stack_Reg|PilhaPos7~4   ; out              ;
+; |Stack_Reg|PilhaPos7~13  ; |Stack_Reg|PilhaPos7~13  ; out              ;
+; |Stack_Reg|PilhaPos7~14  ; |Stack_Reg|PilhaPos7~14  ; out              ;
+; |Stack_Reg|PilhaPos7~15  ; |Stack_Reg|PilhaPos7~15  ; out              ;
+; |Stack_Reg|PilhaPos7~16  ; |Stack_Reg|PilhaPos7~16  ; out              ;
+; |Stack_Reg|PilhaPos7~17  ; |Stack_Reg|PilhaPos7~17  ; out              ;
+; |Stack_Reg|PilhaPos8~0   ; |Stack_Reg|PilhaPos8~0   ; out              ;
+; |Stack_Reg|PilhaPos8~1   ; |Stack_Reg|PilhaPos8~1   ; out              ;
+; |Stack_Reg|PilhaPos8~2   ; |Stack_Reg|PilhaPos8~2   ; out              ;
+; |Stack_Reg|PilhaPos8~3   ; |Stack_Reg|PilhaPos8~3   ; out              ;
+; |Stack_Reg|PilhaPos8~4   ; |Stack_Reg|PilhaPos8~4   ; out              ;
+; |Stack_Reg|PilhaPos8~13  ; |Stack_Reg|PilhaPos8~13  ; out              ;
+; |Stack_Reg|PilhaPos8~14  ; |Stack_Reg|PilhaPos8~14  ; out              ;
+; |Stack_Reg|PilhaPos8~15  ; |Stack_Reg|PilhaPos8~15  ; out              ;
+; |Stack_Reg|PilhaPos8~16  ; |Stack_Reg|PilhaPos8~16  ; out              ;
+; |Stack_Reg|PilhaPos8~17  ; |Stack_Reg|PilhaPos8~17  ; out              ;
+; |Stack_Reg|PilhaPos1[12] ; |Stack_Reg|PilhaPos1[12] ; regout           ;
+; |Stack_Reg|PilhaPos1[11] ; |Stack_Reg|PilhaPos1[11] ; regout           ;
+; |Stack_Reg|PilhaPos1[10] ; |Stack_Reg|PilhaPos1[10] ; regout           ;
+; |Stack_Reg|PilhaPos1[9]  ; |Stack_Reg|PilhaPos1[9]  ; regout           ;
+; |Stack_Reg|PilhaPos1[8]  ; |Stack_Reg|PilhaPos1[8]  ; regout           ;
+; |Stack_Reg|PilhaPos2[12] ; |Stack_Reg|PilhaPos2[12] ; regout           ;
+; |Stack_Reg|PilhaPos2[11] ; |Stack_Reg|PilhaPos2[11] ; regout           ;
+; |Stack_Reg|PilhaPos2[10] ; |Stack_Reg|PilhaPos2[10] ; regout           ;
+; |Stack_Reg|PilhaPos2[9]  ; |Stack_Reg|PilhaPos2[9]  ; regout           ;
+; |Stack_Reg|PilhaPos2[8]  ; |Stack_Reg|PilhaPos2[8]  ; regout           ;
+; |Stack_Reg|PilhaPos3[12] ; |Stack_Reg|PilhaPos3[12] ; regout           ;
+; |Stack_Reg|PilhaPos3[11] ; |Stack_Reg|PilhaPos3[11] ; regout           ;
+; |Stack_Reg|PilhaPos3[10] ; |Stack_Reg|PilhaPos3[10] ; regout           ;
+; |Stack_Reg|PilhaPos3[9]  ; |Stack_Reg|PilhaPos3[9]  ; regout           ;
+; |Stack_Reg|PilhaPos3[8]  ; |Stack_Reg|PilhaPos3[8]  ; regout           ;
+; |Stack_Reg|PilhaPos4[12] ; |Stack_Reg|PilhaPos4[12] ; regout           ;
+; |Stack_Reg|PilhaPos4[11] ; |Stack_Reg|PilhaPos4[11] ; regout           ;
+; |Stack_Reg|PilhaPos4[10] ; |Stack_Reg|PilhaPos4[10] ; regout           ;
+; |Stack_Reg|PilhaPos4[9]  ; |Stack_Reg|PilhaPos4[9]  ; regout           ;
+; |Stack_Reg|PilhaPos4[8]  ; |Stack_Reg|PilhaPos4[8]  ; regout           ;
+; |Stack_Reg|PilhaPos5[12] ; |Stack_Reg|PilhaPos5[12] ; regout           ;
+; |Stack_Reg|PilhaPos5[11] ; |Stack_Reg|PilhaPos5[11] ; regout           ;
+; |Stack_Reg|PilhaPos5[10] ; |Stack_Reg|PilhaPos5[10] ; regout           ;
+; |Stack_Reg|PilhaPos5[9]  ; |Stack_Reg|PilhaPos5[9]  ; regout           ;
+; |Stack_Reg|PilhaPos5[8]  ; |Stack_Reg|PilhaPos5[8]  ; regout           ;
+; |Stack_Reg|PilhaPos6[12] ; |Stack_Reg|PilhaPos6[12] ; regout           ;
+; |Stack_Reg|PilhaPos6[11] ; |Stack_Reg|PilhaPos6[11] ; regout           ;
+; |Stack_Reg|PilhaPos6[10] ; |Stack_Reg|PilhaPos6[10] ; regout           ;
+; |Stack_Reg|PilhaPos6[9]  ; |Stack_Reg|PilhaPos6[9]  ; regout           ;
+; |Stack_Reg|PilhaPos6[8]  ; |Stack_Reg|PilhaPos6[8]  ; regout           ;
+; |Stack_Reg|PilhaPos7[12] ; |Stack_Reg|PilhaPos7[12] ; regout           ;
+; |Stack_Reg|PilhaPos7[11] ; |Stack_Reg|PilhaPos7[11] ; regout           ;
+; |Stack_Reg|PilhaPos7[10] ; |Stack_Reg|PilhaPos7[10] ; regout           ;
+; |Stack_Reg|PilhaPos7[9]  ; |Stack_Reg|PilhaPos7[9]  ; regout           ;
+; |Stack_Reg|PilhaPos7[8]  ; |Stack_Reg|PilhaPos7[8]  ; regout           ;
+; |Stack_Reg|PilhaPos8[12] ; |Stack_Reg|PilhaPos8[12] ; regout           ;
+; |Stack_Reg|PilhaPos8[11] ; |Stack_Reg|PilhaPos8[11] ; regout           ;
+; |Stack_Reg|PilhaPos8[10] ; |Stack_Reg|PilhaPos8[10] ; regout           ;
+; |Stack_Reg|PilhaPos8[9]  ; |Stack_Reg|PilhaPos8[9]  ; regout           ;
+; |Stack_Reg|PilhaPos8[8]  ; |Stack_Reg|PilhaPos8[8]  ; regout           ;
+; |Stack_Reg|stack_in[8]   ; |Stack_Reg|stack_in[8]   ; out              ;
+; |Stack_Reg|stack_in[9]   ; |Stack_Reg|stack_in[9]   ; out              ;
+; |Stack_Reg|stack_in[10]  ; |Stack_Reg|stack_in[10]  ; out              ;
+; |Stack_Reg|stack_in[11]  ; |Stack_Reg|stack_in[11]  ; out              ;
+; |Stack_Reg|stack_in[12]  ; |Stack_Reg|stack_in[12]  ; out              ;
+; |Stack_Reg|stack_out[8]  ; |Stack_Reg|stack_out[8]  ; pin_out          ;
+; |Stack_Reg|stack_out[9]  ; |Stack_Reg|stack_out[9]  ; pin_out          ;
+; |Stack_Reg|stack_out[10] ; |Stack_Reg|stack_out[10] ; pin_out          ;
+; |Stack_Reg|stack_out[11] ; |Stack_Reg|stack_out[11] ; pin_out          ;
+; |Stack_Reg|stack_out[12] ; |Stack_Reg|stack_out[12] ; pin_out          ;
++--------------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                               ;
++--------------------------+--------------------------+------------------+
+; Node Name                ; Output Port Name         ; Output Port Type ;
++--------------------------+--------------------------+------------------+
+; |Stack_Reg|PilhaPos1~0   ; |Stack_Reg|PilhaPos1~0   ; out              ;
+; |Stack_Reg|PilhaPos1~1   ; |Stack_Reg|PilhaPos1~1   ; out              ;
+; |Stack_Reg|PilhaPos1~2   ; |Stack_Reg|PilhaPos1~2   ; out              ;
+; |Stack_Reg|PilhaPos1~3   ; |Stack_Reg|PilhaPos1~3   ; out              ;
+; |Stack_Reg|PilhaPos1~4   ; |Stack_Reg|PilhaPos1~4   ; out              ;
+; |Stack_Reg|PilhaPos1~5   ; |Stack_Reg|PilhaPos1~5   ; out              ;
+; |Stack_Reg|PilhaPos1~13  ; |Stack_Reg|PilhaPos1~13  ; out              ;
+; |Stack_Reg|PilhaPos1~14  ; |Stack_Reg|PilhaPos1~14  ; out              ;
+; |Stack_Reg|PilhaPos1~15  ; |Stack_Reg|PilhaPos1~15  ; out              ;
+; |Stack_Reg|PilhaPos1~16  ; |Stack_Reg|PilhaPos1~16  ; out              ;
+; |Stack_Reg|PilhaPos1~17  ; |Stack_Reg|PilhaPos1~17  ; out              ;
+; |Stack_Reg|PilhaPos1~18  ; |Stack_Reg|PilhaPos1~18  ; out              ;
+; |Stack_Reg|PilhaPos2~0   ; |Stack_Reg|PilhaPos2~0   ; out              ;
+; |Stack_Reg|PilhaPos2~1   ; |Stack_Reg|PilhaPos2~1   ; out              ;
+; |Stack_Reg|PilhaPos2~2   ; |Stack_Reg|PilhaPos2~2   ; out              ;
+; |Stack_Reg|PilhaPos2~3   ; |Stack_Reg|PilhaPos2~3   ; out              ;
+; |Stack_Reg|PilhaPos2~4   ; |Stack_Reg|PilhaPos2~4   ; out              ;
+; |Stack_Reg|PilhaPos2~5   ; |Stack_Reg|PilhaPos2~5   ; out              ;
+; |Stack_Reg|PilhaPos2~13  ; |Stack_Reg|PilhaPos2~13  ; out              ;
+; |Stack_Reg|PilhaPos2~14  ; |Stack_Reg|PilhaPos2~14  ; out              ;
+; |Stack_Reg|PilhaPos2~15  ; |Stack_Reg|PilhaPos2~15  ; out              ;
+; |Stack_Reg|PilhaPos2~16  ; |Stack_Reg|PilhaPos2~16  ; out              ;
+; |Stack_Reg|PilhaPos2~17  ; |Stack_Reg|PilhaPos2~17  ; out              ;
+; |Stack_Reg|PilhaPos2~18  ; |Stack_Reg|PilhaPos2~18  ; out              ;
+; |Stack_Reg|PilhaPos3~0   ; |Stack_Reg|PilhaPos3~0   ; out              ;
+; |Stack_Reg|PilhaPos3~1   ; |Stack_Reg|PilhaPos3~1   ; out              ;
+; |Stack_Reg|PilhaPos3~2   ; |Stack_Reg|PilhaPos3~2   ; out              ;
+; |Stack_Reg|PilhaPos3~3   ; |Stack_Reg|PilhaPos3~3   ; out              ;
+; |Stack_Reg|PilhaPos3~4   ; |Stack_Reg|PilhaPos3~4   ; out              ;
+; |Stack_Reg|PilhaPos3~13  ; |Stack_Reg|PilhaPos3~13  ; out              ;
+; |Stack_Reg|PilhaPos3~14  ; |Stack_Reg|PilhaPos3~14  ; out              ;
+; |Stack_Reg|PilhaPos3~15  ; |Stack_Reg|PilhaPos3~15  ; out              ;
+; |Stack_Reg|PilhaPos3~16  ; |Stack_Reg|PilhaPos3~16  ; out              ;
+; |Stack_Reg|PilhaPos3~17  ; |Stack_Reg|PilhaPos3~17  ; out              ;
+; |Stack_Reg|PilhaPos4~0   ; |Stack_Reg|PilhaPos4~0   ; out              ;
+; |Stack_Reg|PilhaPos4~1   ; |Stack_Reg|PilhaPos4~1   ; out              ;
+; |Stack_Reg|PilhaPos4~2   ; |Stack_Reg|PilhaPos4~2   ; out              ;
+; |Stack_Reg|PilhaPos4~3   ; |Stack_Reg|PilhaPos4~3   ; out              ;
+; |Stack_Reg|PilhaPos4~4   ; |Stack_Reg|PilhaPos4~4   ; out              ;
+; |Stack_Reg|PilhaPos4~5   ; |Stack_Reg|PilhaPos4~5   ; out              ;
+; |Stack_Reg|PilhaPos4~13  ; |Stack_Reg|PilhaPos4~13  ; out              ;
+; |Stack_Reg|PilhaPos4~14  ; |Stack_Reg|PilhaPos4~14  ; out              ;
+; |Stack_Reg|PilhaPos4~15  ; |Stack_Reg|PilhaPos4~15  ; out              ;
+; |Stack_Reg|PilhaPos4~16  ; |Stack_Reg|PilhaPos4~16  ; out              ;
+; |Stack_Reg|PilhaPos4~17  ; |Stack_Reg|PilhaPos4~17  ; out              ;
+; |Stack_Reg|PilhaPos4~18  ; |Stack_Reg|PilhaPos4~18  ; out              ;
+; |Stack_Reg|PilhaPos5~0   ; |Stack_Reg|PilhaPos5~0   ; out              ;
+; |Stack_Reg|PilhaPos5~1   ; |Stack_Reg|PilhaPos5~1   ; out              ;
+; |Stack_Reg|PilhaPos5~2   ; |Stack_Reg|PilhaPos5~2   ; out              ;
+; |Stack_Reg|PilhaPos5~3   ; |Stack_Reg|PilhaPos5~3   ; out              ;
+; |Stack_Reg|PilhaPos5~4   ; |Stack_Reg|PilhaPos5~4   ; out              ;
+; |Stack_Reg|PilhaPos5~13  ; |Stack_Reg|PilhaPos5~13  ; out              ;
+; |Stack_Reg|PilhaPos5~14  ; |Stack_Reg|PilhaPos5~14  ; out              ;
+; |Stack_Reg|PilhaPos5~15  ; |Stack_Reg|PilhaPos5~15  ; out              ;
+; |Stack_Reg|PilhaPos5~16  ; |Stack_Reg|PilhaPos5~16  ; out              ;
+; |Stack_Reg|PilhaPos5~17  ; |Stack_Reg|PilhaPos5~17  ; out              ;
+; |Stack_Reg|PilhaPos6~0   ; |Stack_Reg|PilhaPos6~0   ; out              ;
+; |Stack_Reg|PilhaPos6~1   ; |Stack_Reg|PilhaPos6~1   ; out              ;
+; |Stack_Reg|PilhaPos6~2   ; |Stack_Reg|PilhaPos6~2   ; out              ;
+; |Stack_Reg|PilhaPos6~3   ; |Stack_Reg|PilhaPos6~3   ; out              ;
+; |Stack_Reg|PilhaPos6~4   ; |Stack_Reg|PilhaPos6~4   ; out              ;
+; |Stack_Reg|PilhaPos6~5   ; |Stack_Reg|PilhaPos6~5   ; out              ;
+; |Stack_Reg|PilhaPos6~13  ; |Stack_Reg|PilhaPos6~13  ; out              ;
+; |Stack_Reg|PilhaPos6~14  ; |Stack_Reg|PilhaPos6~14  ; out              ;
+; |Stack_Reg|PilhaPos6~15  ; |Stack_Reg|PilhaPos6~15  ; out              ;
+; |Stack_Reg|PilhaPos6~16  ; |Stack_Reg|PilhaPos6~16  ; out              ;
+; |Stack_Reg|PilhaPos6~17  ; |Stack_Reg|PilhaPos6~17  ; out              ;
+; |Stack_Reg|PilhaPos6~18  ; |Stack_Reg|PilhaPos6~18  ; out              ;
+; |Stack_Reg|PilhaPos7~0   ; |Stack_Reg|PilhaPos7~0   ; out              ;
+; |Stack_Reg|PilhaPos7~1   ; |Stack_Reg|PilhaPos7~1   ; out              ;
+; |Stack_Reg|PilhaPos7~2   ; |Stack_Reg|PilhaPos7~2   ; out              ;
+; |Stack_Reg|PilhaPos7~3   ; |Stack_Reg|PilhaPos7~3   ; out              ;
+; |Stack_Reg|PilhaPos7~4   ; |Stack_Reg|PilhaPos7~4   ; out              ;
+; |Stack_Reg|PilhaPos7~13  ; |Stack_Reg|PilhaPos7~13  ; out              ;
+; |Stack_Reg|PilhaPos7~14  ; |Stack_Reg|PilhaPos7~14  ; out              ;
+; |Stack_Reg|PilhaPos7~15  ; |Stack_Reg|PilhaPos7~15  ; out              ;
+; |Stack_Reg|PilhaPos7~16  ; |Stack_Reg|PilhaPos7~16  ; out              ;
+; |Stack_Reg|PilhaPos7~17  ; |Stack_Reg|PilhaPos7~17  ; out              ;
+; |Stack_Reg|PilhaPos8~0   ; |Stack_Reg|PilhaPos8~0   ; out              ;
+; |Stack_Reg|PilhaPos8~1   ; |Stack_Reg|PilhaPos8~1   ; out              ;
+; |Stack_Reg|PilhaPos8~2   ; |Stack_Reg|PilhaPos8~2   ; out              ;
+; |Stack_Reg|PilhaPos8~3   ; |Stack_Reg|PilhaPos8~3   ; out              ;
+; |Stack_Reg|PilhaPos8~4   ; |Stack_Reg|PilhaPos8~4   ; out              ;
+; |Stack_Reg|PilhaPos8~5   ; |Stack_Reg|PilhaPos8~5   ; out              ;
+; |Stack_Reg|PilhaPos8~13  ; |Stack_Reg|PilhaPos8~13  ; out              ;
+; |Stack_Reg|PilhaPos8~14  ; |Stack_Reg|PilhaPos8~14  ; out              ;
+; |Stack_Reg|PilhaPos8~15  ; |Stack_Reg|PilhaPos8~15  ; out              ;
+; |Stack_Reg|PilhaPos8~16  ; |Stack_Reg|PilhaPos8~16  ; out              ;
+; |Stack_Reg|PilhaPos8~17  ; |Stack_Reg|PilhaPos8~17  ; out              ;
+; |Stack_Reg|PilhaPos8~18  ; |Stack_Reg|PilhaPos8~18  ; out              ;
+; |Stack_Reg|PilhaPos1[12] ; |Stack_Reg|PilhaPos1[12] ; regout           ;
+; |Stack_Reg|PilhaPos1[11] ; |Stack_Reg|PilhaPos1[11] ; regout           ;
+; |Stack_Reg|PilhaPos1[10] ; |Stack_Reg|PilhaPos1[10] ; regout           ;
+; |Stack_Reg|PilhaPos1[9]  ; |Stack_Reg|PilhaPos1[9]  ; regout           ;
+; |Stack_Reg|PilhaPos1[8]  ; |Stack_Reg|PilhaPos1[8]  ; regout           ;
+; |Stack_Reg|PilhaPos1[7]  ; |Stack_Reg|PilhaPos1[7]  ; regout           ;
+; |Stack_Reg|PilhaPos2[12] ; |Stack_Reg|PilhaPos2[12] ; regout           ;
+; |Stack_Reg|PilhaPos2[11] ; |Stack_Reg|PilhaPos2[11] ; regout           ;
+; |Stack_Reg|PilhaPos2[10] ; |Stack_Reg|PilhaPos2[10] ; regout           ;
+; |Stack_Reg|PilhaPos2[9]  ; |Stack_Reg|PilhaPos2[9]  ; regout           ;
+; |Stack_Reg|PilhaPos2[8]  ; |Stack_Reg|PilhaPos2[8]  ; regout           ;
+; |Stack_Reg|PilhaPos2[7]  ; |Stack_Reg|PilhaPos2[7]  ; regout           ;
+; |Stack_Reg|PilhaPos3[12] ; |Stack_Reg|PilhaPos3[12] ; regout           ;
+; |Stack_Reg|PilhaPos3[11] ; |Stack_Reg|PilhaPos3[11] ; regout           ;
+; |Stack_Reg|PilhaPos3[10] ; |Stack_Reg|PilhaPos3[10] ; regout           ;
+; |Stack_Reg|PilhaPos3[9]  ; |Stack_Reg|PilhaPos3[9]  ; regout           ;
+; |Stack_Reg|PilhaPos3[8]  ; |Stack_Reg|PilhaPos3[8]  ; regout           ;
+; |Stack_Reg|PilhaPos3[7]  ; |Stack_Reg|PilhaPos3[7]  ; regout           ;
+; |Stack_Reg|PilhaPos4[12] ; |Stack_Reg|PilhaPos4[12] ; regout           ;
+; |Stack_Reg|PilhaPos4[11] ; |Stack_Reg|PilhaPos4[11] ; regout           ;
+; |Stack_Reg|PilhaPos4[10] ; |Stack_Reg|PilhaPos4[10] ; regout           ;
+; |Stack_Reg|PilhaPos4[9]  ; |Stack_Reg|PilhaPos4[9]  ; regout           ;
+; |Stack_Reg|PilhaPos4[8]  ; |Stack_Reg|PilhaPos4[8]  ; regout           ;
+; |Stack_Reg|PilhaPos4[7]  ; |Stack_Reg|PilhaPos4[7]  ; regout           ;
+; |Stack_Reg|PilhaPos5[12] ; |Stack_Reg|PilhaPos5[12] ; regout           ;
+; |Stack_Reg|PilhaPos5[11] ; |Stack_Reg|PilhaPos5[11] ; regout           ;
+; |Stack_Reg|PilhaPos5[10] ; |Stack_Reg|PilhaPos5[10] ; regout           ;
+; |Stack_Reg|PilhaPos5[9]  ; |Stack_Reg|PilhaPos5[9]  ; regout           ;
+; |Stack_Reg|PilhaPos5[8]  ; |Stack_Reg|PilhaPos5[8]  ; regout           ;
+; |Stack_Reg|PilhaPos5[7]  ; |Stack_Reg|PilhaPos5[7]  ; regout           ;
+; |Stack_Reg|PilhaPos6[12] ; |Stack_Reg|PilhaPos6[12] ; regout           ;
+; |Stack_Reg|PilhaPos6[11] ; |Stack_Reg|PilhaPos6[11] ; regout           ;
+; |Stack_Reg|PilhaPos6[10] ; |Stack_Reg|PilhaPos6[10] ; regout           ;
+; |Stack_Reg|PilhaPos6[9]  ; |Stack_Reg|PilhaPos6[9]  ; regout           ;
+; |Stack_Reg|PilhaPos6[8]  ; |Stack_Reg|PilhaPos6[8]  ; regout           ;
+; |Stack_Reg|PilhaPos6[7]  ; |Stack_Reg|PilhaPos6[7]  ; regout           ;
+; |Stack_Reg|PilhaPos7[12] ; |Stack_Reg|PilhaPos7[12] ; regout           ;
+; |Stack_Reg|PilhaPos7[11] ; |Stack_Reg|PilhaPos7[11] ; regout           ;
+; |Stack_Reg|PilhaPos7[10] ; |Stack_Reg|PilhaPos7[10] ; regout           ;
+; |Stack_Reg|PilhaPos7[9]  ; |Stack_Reg|PilhaPos7[9]  ; regout           ;
+; |Stack_Reg|PilhaPos7[8]  ; |Stack_Reg|PilhaPos7[8]  ; regout           ;
+; |Stack_Reg|PilhaPos7[7]  ; |Stack_Reg|PilhaPos7[7]  ; regout           ;
+; |Stack_Reg|PilhaPos8[12] ; |Stack_Reg|PilhaPos8[12] ; regout           ;
+; |Stack_Reg|PilhaPos8[11] ; |Stack_Reg|PilhaPos8[11] ; regout           ;
+; |Stack_Reg|PilhaPos8[10] ; |Stack_Reg|PilhaPos8[10] ; regout           ;
+; |Stack_Reg|PilhaPos8[9]  ; |Stack_Reg|PilhaPos8[9]  ; regout           ;
+; |Stack_Reg|PilhaPos8[8]  ; |Stack_Reg|PilhaPos8[8]  ; regout           ;
+; |Stack_Reg|PilhaPos8[7]  ; |Stack_Reg|PilhaPos8[7]  ; regout           ;
+; |Stack_Reg|stack_in[7]   ; |Stack_Reg|stack_in[7]   ; out              ;
+; |Stack_Reg|stack_in[8]   ; |Stack_Reg|stack_in[8]   ; out              ;
+; |Stack_Reg|stack_in[9]   ; |Stack_Reg|stack_in[9]   ; out              ;
+; |Stack_Reg|stack_in[10]  ; |Stack_Reg|stack_in[10]  ; out              ;
+; |Stack_Reg|stack_in[11]  ; |Stack_Reg|stack_in[11]  ; out              ;
+; |Stack_Reg|stack_in[12]  ; |Stack_Reg|stack_in[12]  ; out              ;
+; |Stack_Reg|stack_out[7]  ; |Stack_Reg|stack_out[7]  ; pin_out          ;
+; |Stack_Reg|stack_out[8]  ; |Stack_Reg|stack_out[8]  ; pin_out          ;
+; |Stack_Reg|stack_out[9]  ; |Stack_Reg|stack_out[9]  ; pin_out          ;
+; |Stack_Reg|stack_out[10] ; |Stack_Reg|stack_out[10] ; pin_out          ;
+; |Stack_Reg|stack_out[11] ; |Stack_Reg|stack_out[11] ; pin_out          ;
+; |Stack_Reg|stack_out[12] ; |Stack_Reg|stack_out[12] ; pin_out          ;
++--------------------------+--------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu May 12 16:09:34 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Stack_Reg -c Stack_Reg
+Info: Using vector source file "C:/Users/vsund/OneDrive/Documentos/Universidade/5 Periodo/Sist. reconfiguraveis/Trabalho Final/Stack/Stack_RegWave.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of Stack_RegWave.vwf called Stack_Reg.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 52.5 ns on register "|Stack_Reg|PilhaPos1[3]"
+Warning: Found clock-sensitive change during active clock edge at time 52.5 ns on register "|Stack_Reg|PilhaPos1[2]"
+Warning: Found clock-sensitive change during active clock edge at time 52.5 ns on register "|Stack_Reg|PilhaPos1[1]"
+Warning: Found clock-sensitive change during active clock edge at time 52.5 ns on register "|Stack_Reg|PilhaPos1[0]"
+Warning: Found clock-sensitive change during active clock edge at time 52.5 ns on register "|Stack_Reg|PilhaPos2[2]"
+Warning: Found clock-sensitive change during active clock edge at time 52.5 ns on register "|Stack_Reg|PilhaPos2[1]"
+Warning: Found clock-sensitive change during active clock edge at time 52.5 ns on register "|Stack_Reg|PilhaPos3[0]"
+Warning: Found clock-sensitive change during active clock edge at time 67.5 ns on register "|Stack_Reg|PilhaPos2[0]"
+Warning: Found clock-sensitive change during active clock edge at time 67.5 ns on register "|Stack_Reg|PilhaPos3[3]"
+Warning: Found clock-sensitive change during active clock edge at time 67.5 ns on register "|Stack_Reg|PilhaPos3[2]"
+Warning: Found clock-sensitive change during active clock edge at time 67.5 ns on register "|Stack_Reg|PilhaPos3[1]"
+Warning: Found clock-sensitive change during active clock edge at time 67.5 ns on register "|Stack_Reg|PilhaPos4[2]"
+Warning: Found clock-sensitive change during active clock edge at time 67.5 ns on register "|Stack_Reg|PilhaPos4[1]"
+Warning: Found clock-sensitive change during active clock edge at time 67.5 ns on register "|Stack_Reg|PilhaPos5[0]"
+Warning: Found clock-sensitive change during active clock edge at time 82.5 ns on register "|Stack_Reg|PilhaPos4[0]"
+Warning: Found clock-sensitive change during active clock edge at time 82.5 ns on register "|Stack_Reg|PilhaPos5[3]"
+Warning: Found clock-sensitive change during active clock edge at time 82.5 ns on register "|Stack_Reg|PilhaPos5[2]"
+Warning: Found clock-sensitive change during active clock edge at time 82.5 ns on register "|Stack_Reg|PilhaPos5[1]"
+Warning: Found clock-sensitive change during active clock edge at time 82.5 ns on register "|Stack_Reg|PilhaPos6[2]"
+Warning: Found clock-sensitive change during active clock edge at time 82.5 ns on register "|Stack_Reg|PilhaPos6[1]"
+Warning: Found clock-sensitive change during active clock edge at time 82.5 ns on register "|Stack_Reg|PilhaPos7[0]"
+Warning: Found clock-sensitive change during active clock edge at time 97.5 ns on register "|Stack_Reg|PilhaPos1[4]"
+Warning: Found clock-sensitive change during active clock edge at time 97.5 ns on register "|Stack_Reg|PilhaPos6[0]"
+Warning: Found clock-sensitive change during active clock edge at time 97.5 ns on register "|Stack_Reg|PilhaPos7[3]"
+Warning: Found clock-sensitive change during active clock edge at time 97.5 ns on register "|Stack_Reg|PilhaPos7[2]"
+Warning: Found clock-sensitive change during active clock edge at time 97.5 ns on register "|Stack_Reg|PilhaPos7[1]"
+Warning: Found clock-sensitive change during active clock edge at time 97.5 ns on register "|Stack_Reg|PilhaPos8[2]"
+Warning: Found clock-sensitive change during active clock edge at time 97.5 ns on register "|Stack_Reg|PilhaPos8[1]"
+Warning: Found clock-sensitive change during active clock edge at time 112.5 ns on register "|Stack_Reg|PilhaPos3[4]"
+Warning: Found clock-sensitive change during active clock edge at time 112.5 ns on register "|Stack_Reg|PilhaPos8[0]"
+Warning: Found clock-sensitive change during active clock edge at time 127.5 ns on register "|Stack_Reg|PilhaPos5[4]"
+Warning: Found clock-sensitive change during active clock edge at time 142.5 ns on register "|Stack_Reg|PilhaPos7[4]"
+Warning: Found clock-sensitive change during active clock edge at time 157.5 ns on register "|Stack_Reg|PilhaPos2[3]"
+Warning: Found clock-sensitive change during active clock edge at time 172.5 ns on register "|Stack_Reg|PilhaPos4[3]"
+Warning: Found clock-sensitive change during active clock edge at time 187.5 ns on register "|Stack_Reg|PilhaPos6[3]"
+Warning: Found clock-sensitive change during active clock edge at time 202.5 ns on register "|Stack_Reg|PilhaPos2[5]"
+Warning: Found clock-sensitive change during active clock edge at time 202.5 ns on register "|Stack_Reg|PilhaPos2[4]"
+Warning: Found clock-sensitive change during active clock edge at time 202.5 ns on register "|Stack_Reg|PilhaPos8[3]"
+Warning: Found clock-sensitive change during active clock edge at time 217.5 ns on register "|Stack_Reg|PilhaPos4[5]"
+Warning: Found clock-sensitive change during active clock edge at time 217.5 ns on register "|Stack_Reg|PilhaPos4[4]"
+Warning: Found clock-sensitive change during active clock edge at time 232.5 ns on register "|Stack_Reg|PilhaPos6[5]"
+Warning: Found clock-sensitive change during active clock edge at time 232.5 ns on register "|Stack_Reg|PilhaPos6[4]"
+Warning: Found clock-sensitive change during active clock edge at time 247.5 ns on register "|Stack_Reg|PilhaPos8[5]"
+Warning: Found clock-sensitive change during active clock edge at time 247.5 ns on register "|Stack_Reg|PilhaPos8[4]"
+Warning: Found clock-sensitive change during active clock edge at time 397.5 ns on register "|Stack_Reg|PilhaPos2[6]"
+Warning: Found clock-sensitive change during active clock edge at time 412.5 ns on register "|Stack_Reg|PilhaPos4[6]"
+Warning: Found clock-sensitive change during active clock edge at time 427.5 ns on register "|Stack_Reg|PilhaPos6[6]"
+Warning: Found clock-sensitive change during active clock edge at time 442.5 ns on register "|Stack_Reg|PilhaPos8[6]"
+Warning: Found clock-sensitive change during active clock edge at time 577.5 ns on register "|Stack_Reg|PilhaPos1[5]"
+Warning: Found clock-sensitive change during active clock edge at time 592.5 ns on register "|Stack_Reg|PilhaPos3[5]"
+Warning: Found clock-sensitive change during active clock edge at time 607.5 ns on register "|Stack_Reg|PilhaPos5[5]"
+Warning: Found clock-sensitive change during active clock edge at time 622.5 ns on register "|Stack_Reg|PilhaPos7[5]"
+Warning: Found clock-sensitive change during active clock edge at time 772.5 ns on register "|Stack_Reg|PilhaPos1[7]"
+Warning: Found clock-sensitive change during active clock edge at time 772.5 ns on register "|Stack_Reg|PilhaPos1[6]"
+Warning: Found clock-sensitive change during active clock edge at time 787.5 ns on register "|Stack_Reg|PilhaPos3[7]"
+Warning: Found clock-sensitive change during active clock edge at time 787.5 ns on register "|Stack_Reg|PilhaPos3[6]"
+Warning: Found clock-sensitive change during active clock edge at time 802.5 ns on register "|Stack_Reg|PilhaPos5[7]"
+Warning: Found clock-sensitive change during active clock edge at time 802.5 ns on register "|Stack_Reg|PilhaPos5[6]"
+Warning: Found clock-sensitive change during active clock edge at time 817.5 ns on register "|Stack_Reg|PilhaPos7[7]"
+Warning: Found clock-sensitive change during active clock edge at time 817.5 ns on register "|Stack_Reg|PilhaPos7[6]"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      56.14 %
+Info: Number of transitions in simulation is 10821
+Info: Vector file Stack_RegWave.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 60 warnings
+    Info: Peak virtual memory: 142 megabytes
+    Info: Processing ended: Thu May 12 16:09:35 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

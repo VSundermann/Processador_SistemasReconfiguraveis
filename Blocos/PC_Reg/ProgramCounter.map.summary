@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed May 11 22:35:00 2022
+Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
+Revision Name : ProgramCounter
+Top-level Entity Name : ProgramCounter
+Family : Cyclone II
+Total logic elements : 199
+    Total combinational functions : 178
+    Dedicated logic registers : 138
+Total registers : 138
+Total pins : 57
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

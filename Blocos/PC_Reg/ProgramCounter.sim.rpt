@@ -1,0 +1,981 @@
+Simulator report for ProgramCounter
+Thu May 12 16:37:32 2022
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 502 nodes    ;
+; Simulation Coverage         ;      29.28 % ;
+; Total Number of Transitions ; 924          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                  ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
+; Option                                                                                     ; Setting                ; Default Value ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
+; Simulation mode                                                                            ; Functional             ; Timing        ;
+; Start time                                                                                 ; 0 ns                   ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF                   ;               ;
+; Vector input source                                                                        ; ProgramCounterWave.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                     ; On            ;
+; Check outputs                                                                              ; Off                    ; Off           ;
+; Report simulation coverage                                                                 ; On                     ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                     ; On            ;
+; Display missing 1-value coverage report                                                    ; On                     ; On            ;
+; Display missing 0-value coverage report                                                    ; On                     ; On            ;
+; Detect setup and hold time violations                                                      ; Off                    ; Off           ;
+; Detect glitches                                                                            ; Off                    ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                    ; Off           ;
+; Generate Signal Activity File                                                              ; Off                    ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                    ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                    ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                     ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE             ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                    ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On                     ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                   ; Auto          ;
++--------------------------------------------------------------------------------------------+------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      29.28 % ;
+; Total nodes checked                                 ; 502          ;
+; Total output ports checked                          ; 502          ;
+; Total output ports with complete 1/0-value coverage ; 147          ;
+; Total output ports with no 1/0-value coverage       ; 315          ;
+; Total output ports with no 1-value coverage         ; 323          ;
+; Total output ports with no 0-value coverage         ; 347          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                        ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |ProgramCounter|PilhaPos1~10   ; |ProgramCounter|PilhaPos1~10   ; out              ;
+; |ProgramCounter|PilhaPos1~11   ; |ProgramCounter|PilhaPos1~11   ; out              ;
+; |ProgramCounter|PilhaPos1~12   ; |ProgramCounter|PilhaPos1~12   ; out              ;
+; |ProgramCounter|PilhaPos1~23   ; |ProgramCounter|PilhaPos1~23   ; out              ;
+; |ProgramCounter|PilhaPos1~24   ; |ProgramCounter|PilhaPos1~24   ; out              ;
+; |ProgramCounter|PilhaPos1~25   ; |ProgramCounter|PilhaPos1~25   ; out              ;
+; |ProgramCounter|PilhaPos2~1    ; |ProgramCounter|PilhaPos2~1    ; out              ;
+; |ProgramCounter|PilhaPos2~5    ; |ProgramCounter|PilhaPos2~5    ; out              ;
+; |ProgramCounter|PilhaPos2~6    ; |ProgramCounter|PilhaPos2~6    ; out              ;
+; |ProgramCounter|PilhaPos2~8    ; |ProgramCounter|PilhaPos2~8    ; out              ;
+; |ProgramCounter|PilhaPos2~10   ; |ProgramCounter|PilhaPos2~10   ; out              ;
+; |ProgramCounter|PilhaPos2~11   ; |ProgramCounter|PilhaPos2~11   ; out              ;
+; |ProgramCounter|PilhaPos2~12   ; |ProgramCounter|PilhaPos2~12   ; out              ;
+; |ProgramCounter|PilhaPos2~14   ; |ProgramCounter|PilhaPos2~14   ; out              ;
+; |ProgramCounter|PilhaPos2~18   ; |ProgramCounter|PilhaPos2~18   ; out              ;
+; |ProgramCounter|PilhaPos2~19   ; |ProgramCounter|PilhaPos2~19   ; out              ;
+; |ProgramCounter|PilhaPos2~21   ; |ProgramCounter|PilhaPos2~21   ; out              ;
+; |ProgramCounter|PilhaPos2~23   ; |ProgramCounter|PilhaPos2~23   ; out              ;
+; |ProgramCounter|PilhaPos2~24   ; |ProgramCounter|PilhaPos2~24   ; out              ;
+; |ProgramCounter|PilhaPos2~25   ; |ProgramCounter|PilhaPos2~25   ; out              ;
+; |ProgramCounter|PilhaPos3~1    ; |ProgramCounter|PilhaPos3~1    ; out              ;
+; |ProgramCounter|PilhaPos3~5    ; |ProgramCounter|PilhaPos3~5    ; out              ;
+; |ProgramCounter|PilhaPos3~6    ; |ProgramCounter|PilhaPos3~6    ; out              ;
+; |ProgramCounter|PilhaPos3~8    ; |ProgramCounter|PilhaPos3~8    ; out              ;
+; |ProgramCounter|PilhaPos3~11   ; |ProgramCounter|PilhaPos3~11   ; out              ;
+; |ProgramCounter|PilhaPos3~12   ; |ProgramCounter|PilhaPos3~12   ; out              ;
+; |ProgramCounter|PilhaPos3~14   ; |ProgramCounter|PilhaPos3~14   ; out              ;
+; |ProgramCounter|PilhaPos3~18   ; |ProgramCounter|PilhaPos3~18   ; out              ;
+; |ProgramCounter|PilhaPos3~19   ; |ProgramCounter|PilhaPos3~19   ; out              ;
+; |ProgramCounter|PilhaPos3~21   ; |ProgramCounter|PilhaPos3~21   ; out              ;
+; |ProgramCounter|PilhaPos3~24   ; |ProgramCounter|PilhaPos3~24   ; out              ;
+; |ProgramCounter|PilhaPos3~25   ; |ProgramCounter|PilhaPos3~25   ; out              ;
+; |ProgramCounter|PilhaPos4~1    ; |ProgramCounter|PilhaPos4~1    ; out              ;
+; |ProgramCounter|PilhaPos4~5    ; |ProgramCounter|PilhaPos4~5    ; out              ;
+; |ProgramCounter|PilhaPos4~6    ; |ProgramCounter|PilhaPos4~6    ; out              ;
+; |ProgramCounter|PilhaPos4~8    ; |ProgramCounter|PilhaPos4~8    ; out              ;
+; |ProgramCounter|PilhaPos4~11   ; |ProgramCounter|PilhaPos4~11   ; out              ;
+; |ProgramCounter|PilhaPos4~14   ; |ProgramCounter|PilhaPos4~14   ; out              ;
+; |ProgramCounter|PilhaPos4~18   ; |ProgramCounter|PilhaPos4~18   ; out              ;
+; |ProgramCounter|PilhaPos4~19   ; |ProgramCounter|PilhaPos4~19   ; out              ;
+; |ProgramCounter|PilhaPos4~21   ; |ProgramCounter|PilhaPos4~21   ; out              ;
+; |ProgramCounter|PilhaPos4~24   ; |ProgramCounter|PilhaPos4~24   ; out              ;
+; |ProgramCounter|PilhaPos1[2]   ; |ProgramCounter|PilhaPos1[2]   ; regout           ;
+; |ProgramCounter|PilhaPos1[1]   ; |ProgramCounter|PilhaPos1[1]   ; regout           ;
+; |ProgramCounter|PilhaPos1[0]   ; |ProgramCounter|PilhaPos1[0]   ; regout           ;
+; |ProgramCounter|PilhaPos2[0]   ; |ProgramCounter|PilhaPos2[0]   ; regout           ;
+; |ProgramCounter|PilhaPos3[11]  ; |ProgramCounter|PilhaPos3[11]  ; regout           ;
+; |ProgramCounter|PilhaPos3[7]   ; |ProgramCounter|PilhaPos3[7]   ; regout           ;
+; |ProgramCounter|PilhaPos3[6]   ; |ProgramCounter|PilhaPos3[6]   ; regout           ;
+; |ProgramCounter|PilhaPos3[4]   ; |ProgramCounter|PilhaPos3[4]   ; regout           ;
+; |ProgramCounter|PilhaPos3[1]   ; |ProgramCounter|PilhaPos3[1]   ; regout           ;
+; |ProgramCounter|dbus_out[1]~0  ; |ProgramCounter|dbus_out[1]~0  ; out              ;
+; |ProgramCounter|process_1~0    ; |ProgramCounter|process_1~0    ; out0             ;
+; |ProgramCounter|nextpc_out~1   ; |ProgramCounter|nextpc_out~1   ; out              ;
+; |ProgramCounter|nextpc_out~2   ; |ProgramCounter|nextpc_out~2   ; out              ;
+; |ProgramCounter|nextpc_out~4   ; |ProgramCounter|nextpc_out~4   ; out              ;
+; |ProgramCounter|nextpc_out~5   ; |ProgramCounter|nextpc_out~5   ; out              ;
+; |ProgramCounter|nextpc_out~6   ; |ProgramCounter|nextpc_out~6   ; out              ;
+; |ProgramCounter|nextpc_out~8   ; |ProgramCounter|nextpc_out~8   ; out              ;
+; |ProgramCounter|nextpc_out~10  ; |ProgramCounter|nextpc_out~10  ; out              ;
+; |ProgramCounter|nextpc_out~11  ; |ProgramCounter|nextpc_out~11  ; out              ;
+; |ProgramCounter|nextpc_out~12  ; |ProgramCounter|nextpc_out~12  ; out              ;
+; |ProgramCounter|nextpc_out~14  ; |ProgramCounter|nextpc_out~14  ; out              ;
+; |ProgramCounter|nextpc_out~18  ; |ProgramCounter|nextpc_out~18  ; out              ;
+; |ProgramCounter|nextpc_out~19  ; |ProgramCounter|nextpc_out~19  ; out              ;
+; |ProgramCounter|nextpc_out~21  ; |ProgramCounter|nextpc_out~21  ; out              ;
+; |ProgramCounter|nextpc_out~23  ; |ProgramCounter|nextpc_out~23  ; out              ;
+; |ProgramCounter|nextpc_out~24  ; |ProgramCounter|nextpc_out~24  ; out              ;
+; |ProgramCounter|nextpc_out~25  ; |ProgramCounter|nextpc_out~25  ; out              ;
+; |ProgramCounter|nextpc_out~27  ; |ProgramCounter|nextpc_out~27  ; out              ;
+; |ProgramCounter|nextpc_out~28  ; |ProgramCounter|nextpc_out~28  ; out              ;
+; |ProgramCounter|nextpc_out~30  ; |ProgramCounter|nextpc_out~30  ; out              ;
+; |ProgramCounter|nextpc_out~31  ; |ProgramCounter|nextpc_out~31  ; out              ;
+; |ProgramCounter|nextpc_out~32  ; |ProgramCounter|nextpc_out~32  ; out              ;
+; |ProgramCounter|nextpc_out~34  ; |ProgramCounter|nextpc_out~34  ; out              ;
+; |ProgramCounter|nextpc_out~35  ; |ProgramCounter|nextpc_out~35  ; out              ;
+; |ProgramCounter|nextpc_out~36  ; |ProgramCounter|nextpc_out~36  ; out              ;
+; |ProgramCounter|nextpc_out~37  ; |ProgramCounter|nextpc_out~37  ; out              ;
+; |ProgramCounter|nextpc_out~38  ; |ProgramCounter|nextpc_out~38  ; out              ;
+; |ProgramCounter|nextpc_out~40  ; |ProgramCounter|nextpc_out~40  ; out              ;
+; |ProgramCounter|nextpc_out~41  ; |ProgramCounter|nextpc_out~41  ; out              ;
+; |ProgramCounter|nextpc_out~43  ; |ProgramCounter|nextpc_out~43  ; out              ;
+; |ProgramCounter|nextpc_out~44  ; |ProgramCounter|nextpc_out~44  ; out              ;
+; |ProgramCounter|nextpc_out~45  ; |ProgramCounter|nextpc_out~45  ; out              ;
+; |ProgramCounter|nextpc_out~47  ; |ProgramCounter|nextpc_out~47  ; out              ;
+; |ProgramCounter|nextpc_out~48  ; |ProgramCounter|nextpc_out~48  ; out              ;
+; |ProgramCounter|nextpc_out~49  ; |ProgramCounter|nextpc_out~49  ; out              ;
+; |ProgramCounter|nextpc_out~50  ; |ProgramCounter|nextpc_out~50  ; out              ;
+; |ProgramCounter|nextpc_out~51  ; |ProgramCounter|nextpc_out~51  ; out              ;
+; |ProgramCounter|dbus_out[0]~1  ; |ProgramCounter|dbus_out[0]~1  ; out              ;
+; |ProgramCounter|RegPC[11]      ; |ProgramCounter|RegPC[11]      ; regout           ;
+; |ProgramCounter|RegPC[7]       ; |ProgramCounter|RegPC[7]       ; regout           ;
+; |ProgramCounter|RegPC[6]       ; |ProgramCounter|RegPC[6]       ; regout           ;
+; |ProgramCounter|RegPC[4]       ; |ProgramCounter|RegPC[4]       ; regout           ;
+; |ProgramCounter|RegPC[2]       ; |ProgramCounter|RegPC[2]       ; regout           ;
+; |ProgramCounter|RegPC[1]       ; |ProgramCounter|RegPC[1]       ; regout           ;
+; |ProgramCounter|dbus_out[0]~2  ; |ProgramCounter|dbus_out[0]~2  ; out              ;
+; |ProgramCounter|process_3~0    ; |ProgramCounter|process_3~0    ; out0             ;
+; |ProgramCounter|RegPC[0]       ; |ProgramCounter|RegPC[0]       ; regout           ;
+; |ProgramCounter|process_4~1    ; |ProgramCounter|process_4~1    ; out0             ;
+; |ProgramCounter|dbus_out[1]~3  ; |ProgramCounter|dbus_out[1]~3  ; out              ;
+; |ProgramCounter|dbus_out[2]~4  ; |ProgramCounter|dbus_out[2]~4  ; out              ;
+; |ProgramCounter|dbus_out[2]~5  ; |ProgramCounter|dbus_out[2]~5  ; out              ;
+; |ProgramCounter|dbus_out[4]~8  ; |ProgramCounter|dbus_out[4]~8  ; out              ;
+; |ProgramCounter|dbus_out[4]~9  ; |ProgramCounter|dbus_out[4]~9  ; out              ;
+; |ProgramCounter|dbus_out[6]~12 ; |ProgramCounter|dbus_out[6]~12 ; out              ;
+; |ProgramCounter|dbus_out[6]~13 ; |ProgramCounter|dbus_out[6]~13 ; out              ;
+; |ProgramCounter|dbus_out[7]~14 ; |ProgramCounter|dbus_out[7]~14 ; out              ;
+; |ProgramCounter|dbus_out[7]~15 ; |ProgramCounter|dbus_out[7]~15 ; out0             ;
+; |ProgramCounter|dbus_out[7]~16 ; |ProgramCounter|dbus_out[7]~16 ; out              ;
+; |ProgramCounter|abus_in[1]     ; |ProgramCounter|abus_in[1]     ; out              ;
+; |ProgramCounter|abus_in[3]     ; |ProgramCounter|abus_in[3]     ; out              ;
+; |ProgramCounter|nrst           ; |ProgramCounter|nrst           ; out              ;
+; |ProgramCounter|clk_in         ; |ProgramCounter|clk_in         ; out              ;
+; |ProgramCounter|inc_pc         ; |ProgramCounter|inc_pc         ; out              ;
+; |ProgramCounter|load_pc        ; |ProgramCounter|load_pc        ; out              ;
+; |ProgramCounter|wr_en          ; |ProgramCounter|wr_en          ; out              ;
+; |ProgramCounter|rd_en          ; |ProgramCounter|rd_en          ; out              ;
+; |ProgramCounter|stack_push     ; |ProgramCounter|stack_push     ; out              ;
+; |ProgramCounter|stack_pop      ; |ProgramCounter|stack_pop      ; out              ;
+; |ProgramCounter|nextpc_out[0]  ; |ProgramCounter|nextpc_out[0]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[1]  ; |ProgramCounter|nextpc_out[1]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[2]  ; |ProgramCounter|nextpc_out[2]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[3]  ; |ProgramCounter|nextpc_out[3]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[4]  ; |ProgramCounter|nextpc_out[4]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[6]  ; |ProgramCounter|nextpc_out[6]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[7]  ; |ProgramCounter|nextpc_out[7]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[8]  ; |ProgramCounter|nextpc_out[8]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[10] ; |ProgramCounter|nextpc_out[10] ; pin_out          ;
+; |ProgramCounter|nextpc_out[11] ; |ProgramCounter|nextpc_out[11] ; pin_out          ;
+; |ProgramCounter|dbus_out[0]    ; |ProgramCounter|dbus_out[0]    ; pin_out          ;
+; |ProgramCounter|dbus_out[1]    ; |ProgramCounter|dbus_out[1]    ; pin_out          ;
+; |ProgramCounter|dbus_out[2]    ; |ProgramCounter|dbus_out[2]    ; pin_out          ;
+; |ProgramCounter|dbus_out[4]    ; |ProgramCounter|dbus_out[4]    ; pin_out          ;
+; |ProgramCounter|dbus_out[6]    ; |ProgramCounter|dbus_out[6]    ; pin_out          ;
+; |ProgramCounter|dbus_out[7]    ; |ProgramCounter|dbus_out[7]    ; pin_out          ;
+; |ProgramCounter|Add0~0         ; |ProgramCounter|Add0~0         ; out0             ;
+; |ProgramCounter|Add0~1         ; |ProgramCounter|Add0~1         ; out0             ;
+; |ProgramCounter|Add0~2         ; |ProgramCounter|Add0~2         ; out0             ;
+; |ProgramCounter|Add0~3         ; |ProgramCounter|Add0~3         ; out0             ;
+; |ProgramCounter|Add0~4         ; |ProgramCounter|Add0~4         ; out0             ;
+; |ProgramCounter|Add0~6         ; |ProgramCounter|Add0~6         ; out0             ;
+; |ProgramCounter|Add0~10        ; |ProgramCounter|Add0~10        ; out0             ;
+; |ProgramCounter|Add0~12        ; |ProgramCounter|Add0~12        ; out0             ;
+; |ProgramCounter|Add0~20        ; |ProgramCounter|Add0~20        ; out0             ;
+; |ProgramCounter|Equal0~0       ; |ProgramCounter|Equal0~0       ; out0             ;
+; |ProgramCounter|Equal1~0       ; |ProgramCounter|Equal1~0       ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |ProgramCounter|PilhaPos1~0    ; |ProgramCounter|PilhaPos1~0    ; out              ;
+; |ProgramCounter|PilhaPos1~2    ; |ProgramCounter|PilhaPos1~2    ; out              ;
+; |ProgramCounter|PilhaPos1~3    ; |ProgramCounter|PilhaPos1~3    ; out              ;
+; |ProgramCounter|PilhaPos1~4    ; |ProgramCounter|PilhaPos1~4    ; out              ;
+; |ProgramCounter|PilhaPos1~7    ; |ProgramCounter|PilhaPos1~7    ; out              ;
+; |ProgramCounter|PilhaPos1~9    ; |ProgramCounter|PilhaPos1~9    ; out              ;
+; |ProgramCounter|PilhaPos1~13   ; |ProgramCounter|PilhaPos1~13   ; out              ;
+; |ProgramCounter|PilhaPos1~15   ; |ProgramCounter|PilhaPos1~15   ; out              ;
+; |ProgramCounter|PilhaPos1~16   ; |ProgramCounter|PilhaPos1~16   ; out              ;
+; |ProgramCounter|PilhaPos1~17   ; |ProgramCounter|PilhaPos1~17   ; out              ;
+; |ProgramCounter|PilhaPos1~20   ; |ProgramCounter|PilhaPos1~20   ; out              ;
+; |ProgramCounter|PilhaPos1~22   ; |ProgramCounter|PilhaPos1~22   ; out              ;
+; |ProgramCounter|PilhaPos2~0    ; |ProgramCounter|PilhaPos2~0    ; out              ;
+; |ProgramCounter|PilhaPos2~2    ; |ProgramCounter|PilhaPos2~2    ; out              ;
+; |ProgramCounter|PilhaPos2~3    ; |ProgramCounter|PilhaPos2~3    ; out              ;
+; |ProgramCounter|PilhaPos2~4    ; |ProgramCounter|PilhaPos2~4    ; out              ;
+; |ProgramCounter|PilhaPos2~7    ; |ProgramCounter|PilhaPos2~7    ; out              ;
+; |ProgramCounter|PilhaPos2~9    ; |ProgramCounter|PilhaPos2~9    ; out              ;
+; |ProgramCounter|PilhaPos2~13   ; |ProgramCounter|PilhaPos2~13   ; out              ;
+; |ProgramCounter|PilhaPos2~15   ; |ProgramCounter|PilhaPos2~15   ; out              ;
+; |ProgramCounter|PilhaPos2~16   ; |ProgramCounter|PilhaPos2~16   ; out              ;
+; |ProgramCounter|PilhaPos2~17   ; |ProgramCounter|PilhaPos2~17   ; out              ;
+; |ProgramCounter|PilhaPos2~20   ; |ProgramCounter|PilhaPos2~20   ; out              ;
+; |ProgramCounter|PilhaPos2~22   ; |ProgramCounter|PilhaPos2~22   ; out              ;
+; |ProgramCounter|PilhaPos3~0    ; |ProgramCounter|PilhaPos3~0    ; out              ;
+; |ProgramCounter|PilhaPos3~2    ; |ProgramCounter|PilhaPos3~2    ; out              ;
+; |ProgramCounter|PilhaPos3~3    ; |ProgramCounter|PilhaPos3~3    ; out              ;
+; |ProgramCounter|PilhaPos3~4    ; |ProgramCounter|PilhaPos3~4    ; out              ;
+; |ProgramCounter|PilhaPos3~7    ; |ProgramCounter|PilhaPos3~7    ; out              ;
+; |ProgramCounter|PilhaPos3~9    ; |ProgramCounter|PilhaPos3~9    ; out              ;
+; |ProgramCounter|PilhaPos3~10   ; |ProgramCounter|PilhaPos3~10   ; out              ;
+; |ProgramCounter|PilhaPos3~13   ; |ProgramCounter|PilhaPos3~13   ; out              ;
+; |ProgramCounter|PilhaPos3~15   ; |ProgramCounter|PilhaPos3~15   ; out              ;
+; |ProgramCounter|PilhaPos3~16   ; |ProgramCounter|PilhaPos3~16   ; out              ;
+; |ProgramCounter|PilhaPos3~17   ; |ProgramCounter|PilhaPos3~17   ; out              ;
+; |ProgramCounter|PilhaPos3~20   ; |ProgramCounter|PilhaPos3~20   ; out              ;
+; |ProgramCounter|PilhaPos3~22   ; |ProgramCounter|PilhaPos3~22   ; out              ;
+; |ProgramCounter|PilhaPos3~23   ; |ProgramCounter|PilhaPos3~23   ; out              ;
+; |ProgramCounter|PilhaPos4~0    ; |ProgramCounter|PilhaPos4~0    ; out              ;
+; |ProgramCounter|PilhaPos4~2    ; |ProgramCounter|PilhaPos4~2    ; out              ;
+; |ProgramCounter|PilhaPos4~3    ; |ProgramCounter|PilhaPos4~3    ; out              ;
+; |ProgramCounter|PilhaPos4~4    ; |ProgramCounter|PilhaPos4~4    ; out              ;
+; |ProgramCounter|PilhaPos4~7    ; |ProgramCounter|PilhaPos4~7    ; out              ;
+; |ProgramCounter|PilhaPos4~9    ; |ProgramCounter|PilhaPos4~9    ; out              ;
+; |ProgramCounter|PilhaPos4~10   ; |ProgramCounter|PilhaPos4~10   ; out              ;
+; |ProgramCounter|PilhaPos4~12   ; |ProgramCounter|PilhaPos4~12   ; out              ;
+; |ProgramCounter|PilhaPos4~13   ; |ProgramCounter|PilhaPos4~13   ; out              ;
+; |ProgramCounter|PilhaPos4~15   ; |ProgramCounter|PilhaPos4~15   ; out              ;
+; |ProgramCounter|PilhaPos4~16   ; |ProgramCounter|PilhaPos4~16   ; out              ;
+; |ProgramCounter|PilhaPos4~17   ; |ProgramCounter|PilhaPos4~17   ; out              ;
+; |ProgramCounter|PilhaPos4~20   ; |ProgramCounter|PilhaPos4~20   ; out              ;
+; |ProgramCounter|PilhaPos4~22   ; |ProgramCounter|PilhaPos4~22   ; out              ;
+; |ProgramCounter|PilhaPos4~23   ; |ProgramCounter|PilhaPos4~23   ; out              ;
+; |ProgramCounter|PilhaPos4~25   ; |ProgramCounter|PilhaPos4~25   ; out              ;
+; |ProgramCounter|PilhaPos5~0    ; |ProgramCounter|PilhaPos5~0    ; out              ;
+; |ProgramCounter|PilhaPos5~1    ; |ProgramCounter|PilhaPos5~1    ; out              ;
+; |ProgramCounter|PilhaPos5~2    ; |ProgramCounter|PilhaPos5~2    ; out              ;
+; |ProgramCounter|PilhaPos5~3    ; |ProgramCounter|PilhaPos5~3    ; out              ;
+; |ProgramCounter|PilhaPos5~4    ; |ProgramCounter|PilhaPos5~4    ; out              ;
+; |ProgramCounter|PilhaPos5~5    ; |ProgramCounter|PilhaPos5~5    ; out              ;
+; |ProgramCounter|PilhaPos5~6    ; |ProgramCounter|PilhaPos5~6    ; out              ;
+; |ProgramCounter|PilhaPos5~7    ; |ProgramCounter|PilhaPos5~7    ; out              ;
+; |ProgramCounter|PilhaPos5~8    ; |ProgramCounter|PilhaPos5~8    ; out              ;
+; |ProgramCounter|PilhaPos5~9    ; |ProgramCounter|PilhaPos5~9    ; out              ;
+; |ProgramCounter|PilhaPos5~10   ; |ProgramCounter|PilhaPos5~10   ; out              ;
+; |ProgramCounter|PilhaPos5~11   ; |ProgramCounter|PilhaPos5~11   ; out              ;
+; |ProgramCounter|PilhaPos5~12   ; |ProgramCounter|PilhaPos5~12   ; out              ;
+; |ProgramCounter|PilhaPos5~13   ; |ProgramCounter|PilhaPos5~13   ; out              ;
+; |ProgramCounter|PilhaPos5~14   ; |ProgramCounter|PilhaPos5~14   ; out              ;
+; |ProgramCounter|PilhaPos5~15   ; |ProgramCounter|PilhaPos5~15   ; out              ;
+; |ProgramCounter|PilhaPos5~16   ; |ProgramCounter|PilhaPos5~16   ; out              ;
+; |ProgramCounter|PilhaPos5~17   ; |ProgramCounter|PilhaPos5~17   ; out              ;
+; |ProgramCounter|PilhaPos5~18   ; |ProgramCounter|PilhaPos5~18   ; out              ;
+; |ProgramCounter|PilhaPos5~19   ; |ProgramCounter|PilhaPos5~19   ; out              ;
+; |ProgramCounter|PilhaPos5~20   ; |ProgramCounter|PilhaPos5~20   ; out              ;
+; |ProgramCounter|PilhaPos5~21   ; |ProgramCounter|PilhaPos5~21   ; out              ;
+; |ProgramCounter|PilhaPos5~22   ; |ProgramCounter|PilhaPos5~22   ; out              ;
+; |ProgramCounter|PilhaPos5~23   ; |ProgramCounter|PilhaPos5~23   ; out              ;
+; |ProgramCounter|PilhaPos5~24   ; |ProgramCounter|PilhaPos5~24   ; out              ;
+; |ProgramCounter|PilhaPos5~25   ; |ProgramCounter|PilhaPos5~25   ; out              ;
+; |ProgramCounter|PilhaPos6~0    ; |ProgramCounter|PilhaPos6~0    ; out              ;
+; |ProgramCounter|PilhaPos6~1    ; |ProgramCounter|PilhaPos6~1    ; out              ;
+; |ProgramCounter|PilhaPos6~2    ; |ProgramCounter|PilhaPos6~2    ; out              ;
+; |ProgramCounter|PilhaPos6~3    ; |ProgramCounter|PilhaPos6~3    ; out              ;
+; |ProgramCounter|PilhaPos6~4    ; |ProgramCounter|PilhaPos6~4    ; out              ;
+; |ProgramCounter|PilhaPos6~5    ; |ProgramCounter|PilhaPos6~5    ; out              ;
+; |ProgramCounter|PilhaPos6~6    ; |ProgramCounter|PilhaPos6~6    ; out              ;
+; |ProgramCounter|PilhaPos6~7    ; |ProgramCounter|PilhaPos6~7    ; out              ;
+; |ProgramCounter|PilhaPos6~8    ; |ProgramCounter|PilhaPos6~8    ; out              ;
+; |ProgramCounter|PilhaPos6~9    ; |ProgramCounter|PilhaPos6~9    ; out              ;
+; |ProgramCounter|PilhaPos6~10   ; |ProgramCounter|PilhaPos6~10   ; out              ;
+; |ProgramCounter|PilhaPos6~11   ; |ProgramCounter|PilhaPos6~11   ; out              ;
+; |ProgramCounter|PilhaPos6~12   ; |ProgramCounter|PilhaPos6~12   ; out              ;
+; |ProgramCounter|PilhaPos6~13   ; |ProgramCounter|PilhaPos6~13   ; out              ;
+; |ProgramCounter|PilhaPos6~14   ; |ProgramCounter|PilhaPos6~14   ; out              ;
+; |ProgramCounter|PilhaPos6~15   ; |ProgramCounter|PilhaPos6~15   ; out              ;
+; |ProgramCounter|PilhaPos6~16   ; |ProgramCounter|PilhaPos6~16   ; out              ;
+; |ProgramCounter|PilhaPos6~17   ; |ProgramCounter|PilhaPos6~17   ; out              ;
+; |ProgramCounter|PilhaPos6~18   ; |ProgramCounter|PilhaPos6~18   ; out              ;
+; |ProgramCounter|PilhaPos6~19   ; |ProgramCounter|PilhaPos6~19   ; out              ;
+; |ProgramCounter|PilhaPos6~20   ; |ProgramCounter|PilhaPos6~20   ; out              ;
+; |ProgramCounter|PilhaPos6~21   ; |ProgramCounter|PilhaPos6~21   ; out              ;
+; |ProgramCounter|PilhaPos6~22   ; |ProgramCounter|PilhaPos6~22   ; out              ;
+; |ProgramCounter|PilhaPos6~23   ; |ProgramCounter|PilhaPos6~23   ; out              ;
+; |ProgramCounter|PilhaPos6~24   ; |ProgramCounter|PilhaPos6~24   ; out              ;
+; |ProgramCounter|PilhaPos6~25   ; |ProgramCounter|PilhaPos6~25   ; out              ;
+; |ProgramCounter|PilhaPos7~0    ; |ProgramCounter|PilhaPos7~0    ; out              ;
+; |ProgramCounter|PilhaPos7~1    ; |ProgramCounter|PilhaPos7~1    ; out              ;
+; |ProgramCounter|PilhaPos7~2    ; |ProgramCounter|PilhaPos7~2    ; out              ;
+; |ProgramCounter|PilhaPos7~3    ; |ProgramCounter|PilhaPos7~3    ; out              ;
+; |ProgramCounter|PilhaPos7~4    ; |ProgramCounter|PilhaPos7~4    ; out              ;
+; |ProgramCounter|PilhaPos7~5    ; |ProgramCounter|PilhaPos7~5    ; out              ;
+; |ProgramCounter|PilhaPos7~6    ; |ProgramCounter|PilhaPos7~6    ; out              ;
+; |ProgramCounter|PilhaPos7~7    ; |ProgramCounter|PilhaPos7~7    ; out              ;
+; |ProgramCounter|PilhaPos7~8    ; |ProgramCounter|PilhaPos7~8    ; out              ;
+; |ProgramCounter|PilhaPos7~9    ; |ProgramCounter|PilhaPos7~9    ; out              ;
+; |ProgramCounter|PilhaPos7~10   ; |ProgramCounter|PilhaPos7~10   ; out              ;
+; |ProgramCounter|PilhaPos7~11   ; |ProgramCounter|PilhaPos7~11   ; out              ;
+; |ProgramCounter|PilhaPos7~12   ; |ProgramCounter|PilhaPos7~12   ; out              ;
+; |ProgramCounter|PilhaPos7~13   ; |ProgramCounter|PilhaPos7~13   ; out              ;
+; |ProgramCounter|PilhaPos7~14   ; |ProgramCounter|PilhaPos7~14   ; out              ;
+; |ProgramCounter|PilhaPos7~15   ; |ProgramCounter|PilhaPos7~15   ; out              ;
+; |ProgramCounter|PilhaPos7~16   ; |ProgramCounter|PilhaPos7~16   ; out              ;
+; |ProgramCounter|PilhaPos7~17   ; |ProgramCounter|PilhaPos7~17   ; out              ;
+; |ProgramCounter|PilhaPos7~18   ; |ProgramCounter|PilhaPos7~18   ; out              ;
+; |ProgramCounter|PilhaPos7~19   ; |ProgramCounter|PilhaPos7~19   ; out              ;
+; |ProgramCounter|PilhaPos7~20   ; |ProgramCounter|PilhaPos7~20   ; out              ;
+; |ProgramCounter|PilhaPos7~21   ; |ProgramCounter|PilhaPos7~21   ; out              ;
+; |ProgramCounter|PilhaPos7~22   ; |ProgramCounter|PilhaPos7~22   ; out              ;
+; |ProgramCounter|PilhaPos7~23   ; |ProgramCounter|PilhaPos7~23   ; out              ;
+; |ProgramCounter|PilhaPos7~24   ; |ProgramCounter|PilhaPos7~24   ; out              ;
+; |ProgramCounter|PilhaPos7~25   ; |ProgramCounter|PilhaPos7~25   ; out              ;
+; |ProgramCounter|PilhaPos8~0    ; |ProgramCounter|PilhaPos8~0    ; out              ;
+; |ProgramCounter|PilhaPos8~1    ; |ProgramCounter|PilhaPos8~1    ; out              ;
+; |ProgramCounter|PilhaPos8~2    ; |ProgramCounter|PilhaPos8~2    ; out              ;
+; |ProgramCounter|PilhaPos8~3    ; |ProgramCounter|PilhaPos8~3    ; out              ;
+; |ProgramCounter|PilhaPos8~4    ; |ProgramCounter|PilhaPos8~4    ; out              ;
+; |ProgramCounter|PilhaPos8~5    ; |ProgramCounter|PilhaPos8~5    ; out              ;
+; |ProgramCounter|PilhaPos8~6    ; |ProgramCounter|PilhaPos8~6    ; out              ;
+; |ProgramCounter|PilhaPos8~7    ; |ProgramCounter|PilhaPos8~7    ; out              ;
+; |ProgramCounter|PilhaPos8~8    ; |ProgramCounter|PilhaPos8~8    ; out              ;
+; |ProgramCounter|PilhaPos8~9    ; |ProgramCounter|PilhaPos8~9    ; out              ;
+; |ProgramCounter|PilhaPos8~10   ; |ProgramCounter|PilhaPos8~10   ; out              ;
+; |ProgramCounter|PilhaPos8~11   ; |ProgramCounter|PilhaPos8~11   ; out              ;
+; |ProgramCounter|PilhaPos8~12   ; |ProgramCounter|PilhaPos8~12   ; out              ;
+; |ProgramCounter|PilhaPos8~13   ; |ProgramCounter|PilhaPos8~13   ; out              ;
+; |ProgramCounter|PilhaPos8~14   ; |ProgramCounter|PilhaPos8~14   ; out              ;
+; |ProgramCounter|PilhaPos8~15   ; |ProgramCounter|PilhaPos8~15   ; out              ;
+; |ProgramCounter|PilhaPos8~16   ; |ProgramCounter|PilhaPos8~16   ; out              ;
+; |ProgramCounter|PilhaPos8~17   ; |ProgramCounter|PilhaPos8~17   ; out              ;
+; |ProgramCounter|PilhaPos8~18   ; |ProgramCounter|PilhaPos8~18   ; out              ;
+; |ProgramCounter|PilhaPos8~19   ; |ProgramCounter|PilhaPos8~19   ; out              ;
+; |ProgramCounter|PilhaPos8~20   ; |ProgramCounter|PilhaPos8~20   ; out              ;
+; |ProgramCounter|PilhaPos8~21   ; |ProgramCounter|PilhaPos8~21   ; out              ;
+; |ProgramCounter|PilhaPos8~22   ; |ProgramCounter|PilhaPos8~22   ; out              ;
+; |ProgramCounter|PilhaPos8~23   ; |ProgramCounter|PilhaPos8~23   ; out              ;
+; |ProgramCounter|PilhaPos8~24   ; |ProgramCounter|PilhaPos8~24   ; out              ;
+; |ProgramCounter|PilhaPos8~25   ; |ProgramCounter|PilhaPos8~25   ; out              ;
+; |ProgramCounter|PilhaPoped[0]  ; |ProgramCounter|PilhaPoped[0]  ; regout           ;
+; |ProgramCounter|PilhaPos1[12]  ; |ProgramCounter|PilhaPos1[12]  ; regout           ;
+; |ProgramCounter|PilhaPos1[10]  ; |ProgramCounter|PilhaPos1[10]  ; regout           ;
+; |ProgramCounter|PilhaPos1[9]   ; |ProgramCounter|PilhaPos1[9]   ; regout           ;
+; |ProgramCounter|PilhaPos1[8]   ; |ProgramCounter|PilhaPos1[8]   ; regout           ;
+; |ProgramCounter|PilhaPos1[5]   ; |ProgramCounter|PilhaPos1[5]   ; regout           ;
+; |ProgramCounter|PilhaPos1[3]   ; |ProgramCounter|PilhaPos1[3]   ; regout           ;
+; |ProgramCounter|PilhaPos2[12]  ; |ProgramCounter|PilhaPos2[12]  ; regout           ;
+; |ProgramCounter|PilhaPos2[10]  ; |ProgramCounter|PilhaPos2[10]  ; regout           ;
+; |ProgramCounter|PilhaPos2[9]   ; |ProgramCounter|PilhaPos2[9]   ; regout           ;
+; |ProgramCounter|PilhaPos2[8]   ; |ProgramCounter|PilhaPos2[8]   ; regout           ;
+; |ProgramCounter|PilhaPos2[5]   ; |ProgramCounter|PilhaPos2[5]   ; regout           ;
+; |ProgramCounter|PilhaPos2[3]   ; |ProgramCounter|PilhaPos2[3]   ; regout           ;
+; |ProgramCounter|PilhaPos2[2]   ; |ProgramCounter|PilhaPos2[2]   ; regout           ;
+; |ProgramCounter|PilhaPos3[12]  ; |ProgramCounter|PilhaPos3[12]  ; regout           ;
+; |ProgramCounter|PilhaPos3[10]  ; |ProgramCounter|PilhaPos3[10]  ; regout           ;
+; |ProgramCounter|PilhaPos3[9]   ; |ProgramCounter|PilhaPos3[9]   ; regout           ;
+; |ProgramCounter|PilhaPos3[8]   ; |ProgramCounter|PilhaPos3[8]   ; regout           ;
+; |ProgramCounter|PilhaPos3[5]   ; |ProgramCounter|PilhaPos3[5]   ; regout           ;
+; |ProgramCounter|PilhaPos3[3]   ; |ProgramCounter|PilhaPos3[3]   ; regout           ;
+; |ProgramCounter|PilhaPos3[2]   ; |ProgramCounter|PilhaPos3[2]   ; regout           ;
+; |ProgramCounter|PilhaPos3[0]   ; |ProgramCounter|PilhaPos3[0]   ; regout           ;
+; |ProgramCounter|PilhaPos4[12]  ; |ProgramCounter|PilhaPos4[12]  ; regout           ;
+; |ProgramCounter|PilhaPos4[11]  ; |ProgramCounter|PilhaPos4[11]  ; regout           ;
+; |ProgramCounter|PilhaPos4[10]  ; |ProgramCounter|PilhaPos4[10]  ; regout           ;
+; |ProgramCounter|PilhaPos4[9]   ; |ProgramCounter|PilhaPos4[9]   ; regout           ;
+; |ProgramCounter|PilhaPos4[8]   ; |ProgramCounter|PilhaPos4[8]   ; regout           ;
+; |ProgramCounter|PilhaPos4[7]   ; |ProgramCounter|PilhaPos4[7]   ; regout           ;
+; |ProgramCounter|PilhaPos4[6]   ; |ProgramCounter|PilhaPos4[6]   ; regout           ;
+; |ProgramCounter|PilhaPos4[5]   ; |ProgramCounter|PilhaPos4[5]   ; regout           ;
+; |ProgramCounter|PilhaPos4[4]   ; |ProgramCounter|PilhaPos4[4]   ; regout           ;
+; |ProgramCounter|PilhaPos4[3]   ; |ProgramCounter|PilhaPos4[3]   ; regout           ;
+; |ProgramCounter|PilhaPos4[2]   ; |ProgramCounter|PilhaPos4[2]   ; regout           ;
+; |ProgramCounter|PilhaPos4[1]   ; |ProgramCounter|PilhaPos4[1]   ; regout           ;
+; |ProgramCounter|PilhaPos4[0]   ; |ProgramCounter|PilhaPos4[0]   ; regout           ;
+; |ProgramCounter|PilhaPos5[12]  ; |ProgramCounter|PilhaPos5[12]  ; regout           ;
+; |ProgramCounter|PilhaPos5[11]  ; |ProgramCounter|PilhaPos5[11]  ; regout           ;
+; |ProgramCounter|PilhaPos5[10]  ; |ProgramCounter|PilhaPos5[10]  ; regout           ;
+; |ProgramCounter|PilhaPos5[9]   ; |ProgramCounter|PilhaPos5[9]   ; regout           ;
+; |ProgramCounter|PilhaPos5[8]   ; |ProgramCounter|PilhaPos5[8]   ; regout           ;
+; |ProgramCounter|PilhaPos5[7]   ; |ProgramCounter|PilhaPos5[7]   ; regout           ;
+; |ProgramCounter|PilhaPos5[6]   ; |ProgramCounter|PilhaPos5[6]   ; regout           ;
+; |ProgramCounter|PilhaPos5[5]   ; |ProgramCounter|PilhaPos5[5]   ; regout           ;
+; |ProgramCounter|PilhaPos5[4]   ; |ProgramCounter|PilhaPos5[4]   ; regout           ;
+; |ProgramCounter|PilhaPos5[3]   ; |ProgramCounter|PilhaPos5[3]   ; regout           ;
+; |ProgramCounter|PilhaPos5[2]   ; |ProgramCounter|PilhaPos5[2]   ; regout           ;
+; |ProgramCounter|PilhaPos5[1]   ; |ProgramCounter|PilhaPos5[1]   ; regout           ;
+; |ProgramCounter|PilhaPos5[0]   ; |ProgramCounter|PilhaPos5[0]   ; regout           ;
+; |ProgramCounter|PilhaPos6[12]  ; |ProgramCounter|PilhaPos6[12]  ; regout           ;
+; |ProgramCounter|PilhaPos6[11]  ; |ProgramCounter|PilhaPos6[11]  ; regout           ;
+; |ProgramCounter|PilhaPos6[10]  ; |ProgramCounter|PilhaPos6[10]  ; regout           ;
+; |ProgramCounter|PilhaPos6[9]   ; |ProgramCounter|PilhaPos6[9]   ; regout           ;
+; |ProgramCounter|PilhaPos6[8]   ; |ProgramCounter|PilhaPos6[8]   ; regout           ;
+; |ProgramCounter|PilhaPos6[7]   ; |ProgramCounter|PilhaPos6[7]   ; regout           ;
+; |ProgramCounter|PilhaPos6[6]   ; |ProgramCounter|PilhaPos6[6]   ; regout           ;
+; |ProgramCounter|PilhaPos6[5]   ; |ProgramCounter|PilhaPos6[5]   ; regout           ;
+; |ProgramCounter|PilhaPos6[4]   ; |ProgramCounter|PilhaPos6[4]   ; regout           ;
+; |ProgramCounter|PilhaPos6[3]   ; |ProgramCounter|PilhaPos6[3]   ; regout           ;
+; |ProgramCounter|PilhaPos6[2]   ; |ProgramCounter|PilhaPos6[2]   ; regout           ;
+; |ProgramCounter|PilhaPos6[1]   ; |ProgramCounter|PilhaPos6[1]   ; regout           ;
+; |ProgramCounter|PilhaPos6[0]   ; |ProgramCounter|PilhaPos6[0]   ; regout           ;
+; |ProgramCounter|PilhaPos7[12]  ; |ProgramCounter|PilhaPos7[12]  ; regout           ;
+; |ProgramCounter|PilhaPos7[11]  ; |ProgramCounter|PilhaPos7[11]  ; regout           ;
+; |ProgramCounter|PilhaPos7[10]  ; |ProgramCounter|PilhaPos7[10]  ; regout           ;
+; |ProgramCounter|PilhaPos7[9]   ; |ProgramCounter|PilhaPos7[9]   ; regout           ;
+; |ProgramCounter|PilhaPos7[8]   ; |ProgramCounter|PilhaPos7[8]   ; regout           ;
+; |ProgramCounter|PilhaPos7[7]   ; |ProgramCounter|PilhaPos7[7]   ; regout           ;
+; |ProgramCounter|PilhaPos7[6]   ; |ProgramCounter|PilhaPos7[6]   ; regout           ;
+; |ProgramCounter|PilhaPos7[5]   ; |ProgramCounter|PilhaPos7[5]   ; regout           ;
+; |ProgramCounter|PilhaPos7[4]   ; |ProgramCounter|PilhaPos7[4]   ; regout           ;
+; |ProgramCounter|PilhaPos7[3]   ; |ProgramCounter|PilhaPos7[3]   ; regout           ;
+; |ProgramCounter|PilhaPos7[2]   ; |ProgramCounter|PilhaPos7[2]   ; regout           ;
+; |ProgramCounter|PilhaPos7[1]   ; |ProgramCounter|PilhaPos7[1]   ; regout           ;
+; |ProgramCounter|PilhaPos7[0]   ; |ProgramCounter|PilhaPos7[0]   ; regout           ;
+; |ProgramCounter|PilhaPos8[12]  ; |ProgramCounter|PilhaPos8[12]  ; regout           ;
+; |ProgramCounter|PilhaPos8[11]  ; |ProgramCounter|PilhaPos8[11]  ; regout           ;
+; |ProgramCounter|PilhaPos8[10]  ; |ProgramCounter|PilhaPos8[10]  ; regout           ;
+; |ProgramCounter|PilhaPos8[9]   ; |ProgramCounter|PilhaPos8[9]   ; regout           ;
+; |ProgramCounter|PilhaPos8[8]   ; |ProgramCounter|PilhaPos8[8]   ; regout           ;
+; |ProgramCounter|PilhaPos8[7]   ; |ProgramCounter|PilhaPos8[7]   ; regout           ;
+; |ProgramCounter|PilhaPos8[6]   ; |ProgramCounter|PilhaPos8[6]   ; regout           ;
+; |ProgramCounter|PilhaPos8[5]   ; |ProgramCounter|PilhaPos8[5]   ; regout           ;
+; |ProgramCounter|PilhaPos8[4]   ; |ProgramCounter|PilhaPos8[4]   ; regout           ;
+; |ProgramCounter|PilhaPos8[3]   ; |ProgramCounter|PilhaPos8[3]   ; regout           ;
+; |ProgramCounter|PilhaPos8[2]   ; |ProgramCounter|PilhaPos8[2]   ; regout           ;
+; |ProgramCounter|PilhaPos8[1]   ; |ProgramCounter|PilhaPos8[1]   ; regout           ;
+; |ProgramCounter|nextpc_out~0   ; |ProgramCounter|nextpc_out~0   ; out              ;
+; |ProgramCounter|nextpc_out~3   ; |ProgramCounter|nextpc_out~3   ; out              ;
+; |ProgramCounter|nextpc_out~7   ; |ProgramCounter|nextpc_out~7   ; out              ;
+; |ProgramCounter|nextpc_out~9   ; |ProgramCounter|nextpc_out~9   ; out              ;
+; |ProgramCounter|nextpc_out~13  ; |ProgramCounter|nextpc_out~13  ; out              ;
+; |ProgramCounter|nextpc_out~16  ; |ProgramCounter|nextpc_out~16  ; out              ;
+; |ProgramCounter|nextpc_out~20  ; |ProgramCounter|nextpc_out~20  ; out              ;
+; |ProgramCounter|nextpc_out~22  ; |ProgramCounter|nextpc_out~22  ; out              ;
+; |ProgramCounter|nextpc_out~26  ; |ProgramCounter|nextpc_out~26  ; out              ;
+; |ProgramCounter|nextpc_out~29  ; |ProgramCounter|nextpc_out~29  ; out              ;
+; |ProgramCounter|nextpc_out~33  ; |ProgramCounter|nextpc_out~33  ; out              ;
+; |ProgramCounter|nextpc_out~39  ; |ProgramCounter|nextpc_out~39  ; out              ;
+; |ProgramCounter|nextpc_out~42  ; |ProgramCounter|nextpc_out~42  ; out              ;
+; |ProgramCounter|nextpc_out~46  ; |ProgramCounter|nextpc_out~46  ; out              ;
+; |ProgramCounter|PilhaPos8[0]   ; |ProgramCounter|PilhaPos8[0]   ; regout           ;
+; |ProgramCounter|RegPC[12]      ; |ProgramCounter|RegPC[12]      ; regout           ;
+; |ProgramCounter|RegPC[9]       ; |ProgramCounter|RegPC[9]       ; regout           ;
+; |ProgramCounter|RegPC[5]       ; |ProgramCounter|RegPC[5]       ; regout           ;
+; |ProgramCounter|RegPC[3]       ; |ProgramCounter|RegPC[3]       ; regout           ;
+; |ProgramCounter|LathPC[7]      ; |ProgramCounter|LathPC[7]      ; regout           ;
+; |ProgramCounter|LathPC[6]      ; |ProgramCounter|LathPC[6]      ; regout           ;
+; |ProgramCounter|LathPC[4]      ; |ProgramCounter|LathPC[4]      ; regout           ;
+; |ProgramCounter|LathPC[1]      ; |ProgramCounter|LathPC[1]      ; regout           ;
+; |ProgramCounter|process_4~0    ; |ProgramCounter|process_4~0    ; out0             ;
+; |ProgramCounter|dbus_out[3]~6  ; |ProgramCounter|dbus_out[3]~6  ; out              ;
+; |ProgramCounter|dbus_out[3]~7  ; |ProgramCounter|dbus_out[3]~7  ; out              ;
+; |ProgramCounter|dbus_out[5]~10 ; |ProgramCounter|dbus_out[5]~10 ; out              ;
+; |ProgramCounter|dbus_out[5]~11 ; |ProgramCounter|dbus_out[5]~11 ; out              ;
+; |ProgramCounter|PilhaPoped[1]  ; |ProgramCounter|PilhaPoped[1]  ; regout           ;
+; |ProgramCounter|PilhaPoped[3]  ; |ProgramCounter|PilhaPoped[3]  ; regout           ;
+; |ProgramCounter|PilhaPoped[5]  ; |ProgramCounter|PilhaPoped[5]  ; regout           ;
+; |ProgramCounter|PilhaPoped[8]  ; |ProgramCounter|PilhaPoped[8]  ; regout           ;
+; |ProgramCounter|PilhaPoped[9]  ; |ProgramCounter|PilhaPoped[9]  ; regout           ;
+; |ProgramCounter|PilhaPoped[10] ; |ProgramCounter|PilhaPoped[10] ; regout           ;
+; |ProgramCounter|PilhaPoped[12] ; |ProgramCounter|PilhaPoped[12] ; regout           ;
+; |ProgramCounter|addr_in[0]     ; |ProgramCounter|addr_in[0]     ; out              ;
+; |ProgramCounter|addr_in[1]     ; |ProgramCounter|addr_in[1]     ; out              ;
+; |ProgramCounter|addr_in[2]     ; |ProgramCounter|addr_in[2]     ; out              ;
+; |ProgramCounter|addr_in[3]     ; |ProgramCounter|addr_in[3]     ; out              ;
+; |ProgramCounter|addr_in[4]     ; |ProgramCounter|addr_in[4]     ; out              ;
+; |ProgramCounter|addr_in[5]     ; |ProgramCounter|addr_in[5]     ; out              ;
+; |ProgramCounter|addr_in[6]     ; |ProgramCounter|addr_in[6]     ; out              ;
+; |ProgramCounter|addr_in[7]     ; |ProgramCounter|addr_in[7]     ; out              ;
+; |ProgramCounter|addr_in[8]     ; |ProgramCounter|addr_in[8]     ; out              ;
+; |ProgramCounter|addr_in[9]     ; |ProgramCounter|addr_in[9]     ; out              ;
+; |ProgramCounter|addr_in[10]    ; |ProgramCounter|addr_in[10]    ; out              ;
+; |ProgramCounter|abus_in[0]     ; |ProgramCounter|abus_in[0]     ; out              ;
+; |ProgramCounter|abus_in[2]     ; |ProgramCounter|abus_in[2]     ; out              ;
+; |ProgramCounter|abus_in[4]     ; |ProgramCounter|abus_in[4]     ; out              ;
+; |ProgramCounter|abus_in[5]     ; |ProgramCounter|abus_in[5]     ; out              ;
+; |ProgramCounter|abus_in[6]     ; |ProgramCounter|abus_in[6]     ; out              ;
+; |ProgramCounter|abus_in[7]     ; |ProgramCounter|abus_in[7]     ; out              ;
+; |ProgramCounter|abus_in[8]     ; |ProgramCounter|abus_in[8]     ; out              ;
+; |ProgramCounter|dbus_in[0]     ; |ProgramCounter|dbus_in[0]     ; out              ;
+; |ProgramCounter|dbus_in[1]     ; |ProgramCounter|dbus_in[1]     ; out              ;
+; |ProgramCounter|dbus_in[2]     ; |ProgramCounter|dbus_in[2]     ; out              ;
+; |ProgramCounter|dbus_in[3]     ; |ProgramCounter|dbus_in[3]     ; out              ;
+; |ProgramCounter|dbus_in[4]     ; |ProgramCounter|dbus_in[4]     ; out              ;
+; |ProgramCounter|dbus_in[5]     ; |ProgramCounter|dbus_in[5]     ; out              ;
+; |ProgramCounter|dbus_in[6]     ; |ProgramCounter|dbus_in[6]     ; out              ;
+; |ProgramCounter|dbus_in[7]     ; |ProgramCounter|dbus_in[7]     ; out              ;
+; |ProgramCounter|nextpc_out[5]  ; |ProgramCounter|nextpc_out[5]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[9]  ; |ProgramCounter|nextpc_out[9]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[12] ; |ProgramCounter|nextpc_out[12] ; pin_out          ;
+; |ProgramCounter|dbus_out[3]    ; |ProgramCounter|dbus_out[3]    ; pin_out          ;
+; |ProgramCounter|dbus_out[5]    ; |ProgramCounter|dbus_out[5]    ; pin_out          ;
+; |ProgramCounter|Add0~5         ; |ProgramCounter|Add0~5         ; out0             ;
+; |ProgramCounter|Add0~7         ; |ProgramCounter|Add0~7         ; out0             ;
+; |ProgramCounter|Add0~8         ; |ProgramCounter|Add0~8         ; out0             ;
+; |ProgramCounter|Add0~9         ; |ProgramCounter|Add0~9         ; out0             ;
+; |ProgramCounter|Add0~11        ; |ProgramCounter|Add0~11        ; out0             ;
+; |ProgramCounter|Add0~13        ; |ProgramCounter|Add0~13        ; out0             ;
+; |ProgramCounter|Add0~15        ; |ProgramCounter|Add0~15        ; out0             ;
+; |ProgramCounter|Add0~16        ; |ProgramCounter|Add0~16        ; out0             ;
+; |ProgramCounter|Add0~17        ; |ProgramCounter|Add0~17        ; out0             ;
+; |ProgramCounter|Add0~19        ; |ProgramCounter|Add0~19        ; out0             ;
+; |ProgramCounter|Add0~21        ; |ProgramCounter|Add0~21        ; out0             ;
+; |ProgramCounter|Add0~22        ; |ProgramCounter|Add0~22        ; out0             ;
+; |ProgramCounter|Equal2~0       ; |ProgramCounter|Equal2~0       ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |ProgramCounter|PilhaPos1~0    ; |ProgramCounter|PilhaPos1~0    ; out              ;
+; |ProgramCounter|PilhaPos1~1    ; |ProgramCounter|PilhaPos1~1    ; out              ;
+; |ProgramCounter|PilhaPos1~2    ; |ProgramCounter|PilhaPos1~2    ; out              ;
+; |ProgramCounter|PilhaPos1~3    ; |ProgramCounter|PilhaPos1~3    ; out              ;
+; |ProgramCounter|PilhaPos1~4    ; |ProgramCounter|PilhaPos1~4    ; out              ;
+; |ProgramCounter|PilhaPos1~5    ; |ProgramCounter|PilhaPos1~5    ; out              ;
+; |ProgramCounter|PilhaPos1~6    ; |ProgramCounter|PilhaPos1~6    ; out              ;
+; |ProgramCounter|PilhaPos1~7    ; |ProgramCounter|PilhaPos1~7    ; out              ;
+; |ProgramCounter|PilhaPos1~8    ; |ProgramCounter|PilhaPos1~8    ; out              ;
+; |ProgramCounter|PilhaPos1~9    ; |ProgramCounter|PilhaPos1~9    ; out              ;
+; |ProgramCounter|PilhaPos1~13   ; |ProgramCounter|PilhaPos1~13   ; out              ;
+; |ProgramCounter|PilhaPos1~14   ; |ProgramCounter|PilhaPos1~14   ; out              ;
+; |ProgramCounter|PilhaPos1~15   ; |ProgramCounter|PilhaPos1~15   ; out              ;
+; |ProgramCounter|PilhaPos1~16   ; |ProgramCounter|PilhaPos1~16   ; out              ;
+; |ProgramCounter|PilhaPos1~17   ; |ProgramCounter|PilhaPos1~17   ; out              ;
+; |ProgramCounter|PilhaPos1~18   ; |ProgramCounter|PilhaPos1~18   ; out              ;
+; |ProgramCounter|PilhaPos1~19   ; |ProgramCounter|PilhaPos1~19   ; out              ;
+; |ProgramCounter|PilhaPos1~20   ; |ProgramCounter|PilhaPos1~20   ; out              ;
+; |ProgramCounter|PilhaPos1~21   ; |ProgramCounter|PilhaPos1~21   ; out              ;
+; |ProgramCounter|PilhaPos1~22   ; |ProgramCounter|PilhaPos1~22   ; out              ;
+; |ProgramCounter|PilhaPos2~0    ; |ProgramCounter|PilhaPos2~0    ; out              ;
+; |ProgramCounter|PilhaPos2~2    ; |ProgramCounter|PilhaPos2~2    ; out              ;
+; |ProgramCounter|PilhaPos2~3    ; |ProgramCounter|PilhaPos2~3    ; out              ;
+; |ProgramCounter|PilhaPos2~4    ; |ProgramCounter|PilhaPos2~4    ; out              ;
+; |ProgramCounter|PilhaPos2~7    ; |ProgramCounter|PilhaPos2~7    ; out              ;
+; |ProgramCounter|PilhaPos2~9    ; |ProgramCounter|PilhaPos2~9    ; out              ;
+; |ProgramCounter|PilhaPos2~13   ; |ProgramCounter|PilhaPos2~13   ; out              ;
+; |ProgramCounter|PilhaPos2~15   ; |ProgramCounter|PilhaPos2~15   ; out              ;
+; |ProgramCounter|PilhaPos2~16   ; |ProgramCounter|PilhaPos2~16   ; out              ;
+; |ProgramCounter|PilhaPos2~17   ; |ProgramCounter|PilhaPos2~17   ; out              ;
+; |ProgramCounter|PilhaPos2~20   ; |ProgramCounter|PilhaPos2~20   ; out              ;
+; |ProgramCounter|PilhaPos2~22   ; |ProgramCounter|PilhaPos2~22   ; out              ;
+; |ProgramCounter|PilhaPos3~0    ; |ProgramCounter|PilhaPos3~0    ; out              ;
+; |ProgramCounter|PilhaPos3~2    ; |ProgramCounter|PilhaPos3~2    ; out              ;
+; |ProgramCounter|PilhaPos3~3    ; |ProgramCounter|PilhaPos3~3    ; out              ;
+; |ProgramCounter|PilhaPos3~4    ; |ProgramCounter|PilhaPos3~4    ; out              ;
+; |ProgramCounter|PilhaPos3~7    ; |ProgramCounter|PilhaPos3~7    ; out              ;
+; |ProgramCounter|PilhaPos3~9    ; |ProgramCounter|PilhaPos3~9    ; out              ;
+; |ProgramCounter|PilhaPos3~10   ; |ProgramCounter|PilhaPos3~10   ; out              ;
+; |ProgramCounter|PilhaPos3~13   ; |ProgramCounter|PilhaPos3~13   ; out              ;
+; |ProgramCounter|PilhaPos3~15   ; |ProgramCounter|PilhaPos3~15   ; out              ;
+; |ProgramCounter|PilhaPos3~16   ; |ProgramCounter|PilhaPos3~16   ; out              ;
+; |ProgramCounter|PilhaPos3~17   ; |ProgramCounter|PilhaPos3~17   ; out              ;
+; |ProgramCounter|PilhaPos3~20   ; |ProgramCounter|PilhaPos3~20   ; out              ;
+; |ProgramCounter|PilhaPos3~22   ; |ProgramCounter|PilhaPos3~22   ; out              ;
+; |ProgramCounter|PilhaPos3~23   ; |ProgramCounter|PilhaPos3~23   ; out              ;
+; |ProgramCounter|PilhaPos4~0    ; |ProgramCounter|PilhaPos4~0    ; out              ;
+; |ProgramCounter|PilhaPos4~2    ; |ProgramCounter|PilhaPos4~2    ; out              ;
+; |ProgramCounter|PilhaPos4~3    ; |ProgramCounter|PilhaPos4~3    ; out              ;
+; |ProgramCounter|PilhaPos4~4    ; |ProgramCounter|PilhaPos4~4    ; out              ;
+; |ProgramCounter|PilhaPos4~7    ; |ProgramCounter|PilhaPos4~7    ; out              ;
+; |ProgramCounter|PilhaPos4~9    ; |ProgramCounter|PilhaPos4~9    ; out              ;
+; |ProgramCounter|PilhaPos4~10   ; |ProgramCounter|PilhaPos4~10   ; out              ;
+; |ProgramCounter|PilhaPos4~12   ; |ProgramCounter|PilhaPos4~12   ; out              ;
+; |ProgramCounter|PilhaPos4~13   ; |ProgramCounter|PilhaPos4~13   ; out              ;
+; |ProgramCounter|PilhaPos4~15   ; |ProgramCounter|PilhaPos4~15   ; out              ;
+; |ProgramCounter|PilhaPos4~16   ; |ProgramCounter|PilhaPos4~16   ; out              ;
+; |ProgramCounter|PilhaPos4~17   ; |ProgramCounter|PilhaPos4~17   ; out              ;
+; |ProgramCounter|PilhaPos4~20   ; |ProgramCounter|PilhaPos4~20   ; out              ;
+; |ProgramCounter|PilhaPos4~22   ; |ProgramCounter|PilhaPos4~22   ; out              ;
+; |ProgramCounter|PilhaPos4~23   ; |ProgramCounter|PilhaPos4~23   ; out              ;
+; |ProgramCounter|PilhaPos4~25   ; |ProgramCounter|PilhaPos4~25   ; out              ;
+; |ProgramCounter|PilhaPos5~0    ; |ProgramCounter|PilhaPos5~0    ; out              ;
+; |ProgramCounter|PilhaPos5~1    ; |ProgramCounter|PilhaPos5~1    ; out              ;
+; |ProgramCounter|PilhaPos5~2    ; |ProgramCounter|PilhaPos5~2    ; out              ;
+; |ProgramCounter|PilhaPos5~3    ; |ProgramCounter|PilhaPos5~3    ; out              ;
+; |ProgramCounter|PilhaPos5~4    ; |ProgramCounter|PilhaPos5~4    ; out              ;
+; |ProgramCounter|PilhaPos5~5    ; |ProgramCounter|PilhaPos5~5    ; out              ;
+; |ProgramCounter|PilhaPos5~6    ; |ProgramCounter|PilhaPos5~6    ; out              ;
+; |ProgramCounter|PilhaPos5~7    ; |ProgramCounter|PilhaPos5~7    ; out              ;
+; |ProgramCounter|PilhaPos5~8    ; |ProgramCounter|PilhaPos5~8    ; out              ;
+; |ProgramCounter|PilhaPos5~9    ; |ProgramCounter|PilhaPos5~9    ; out              ;
+; |ProgramCounter|PilhaPos5~10   ; |ProgramCounter|PilhaPos5~10   ; out              ;
+; |ProgramCounter|PilhaPos5~11   ; |ProgramCounter|PilhaPos5~11   ; out              ;
+; |ProgramCounter|PilhaPos5~12   ; |ProgramCounter|PilhaPos5~12   ; out              ;
+; |ProgramCounter|PilhaPos5~13   ; |ProgramCounter|PilhaPos5~13   ; out              ;
+; |ProgramCounter|PilhaPos5~14   ; |ProgramCounter|PilhaPos5~14   ; out              ;
+; |ProgramCounter|PilhaPos5~15   ; |ProgramCounter|PilhaPos5~15   ; out              ;
+; |ProgramCounter|PilhaPos5~16   ; |ProgramCounter|PilhaPos5~16   ; out              ;
+; |ProgramCounter|PilhaPos5~17   ; |ProgramCounter|PilhaPos5~17   ; out              ;
+; |ProgramCounter|PilhaPos5~18   ; |ProgramCounter|PilhaPos5~18   ; out              ;
+; |ProgramCounter|PilhaPos5~19   ; |ProgramCounter|PilhaPos5~19   ; out              ;
+; |ProgramCounter|PilhaPos5~20   ; |ProgramCounter|PilhaPos5~20   ; out              ;
+; |ProgramCounter|PilhaPos5~21   ; |ProgramCounter|PilhaPos5~21   ; out              ;
+; |ProgramCounter|PilhaPos5~22   ; |ProgramCounter|PilhaPos5~22   ; out              ;
+; |ProgramCounter|PilhaPos5~23   ; |ProgramCounter|PilhaPos5~23   ; out              ;
+; |ProgramCounter|PilhaPos5~24   ; |ProgramCounter|PilhaPos5~24   ; out              ;
+; |ProgramCounter|PilhaPos5~25   ; |ProgramCounter|PilhaPos5~25   ; out              ;
+; |ProgramCounter|PilhaPos6~0    ; |ProgramCounter|PilhaPos6~0    ; out              ;
+; |ProgramCounter|PilhaPos6~1    ; |ProgramCounter|PilhaPos6~1    ; out              ;
+; |ProgramCounter|PilhaPos6~2    ; |ProgramCounter|PilhaPos6~2    ; out              ;
+; |ProgramCounter|PilhaPos6~3    ; |ProgramCounter|PilhaPos6~3    ; out              ;
+; |ProgramCounter|PilhaPos6~4    ; |ProgramCounter|PilhaPos6~4    ; out              ;
+; |ProgramCounter|PilhaPos6~5    ; |ProgramCounter|PilhaPos6~5    ; out              ;
+; |ProgramCounter|PilhaPos6~6    ; |ProgramCounter|PilhaPos6~6    ; out              ;
+; |ProgramCounter|PilhaPos6~7    ; |ProgramCounter|PilhaPos6~7    ; out              ;
+; |ProgramCounter|PilhaPos6~8    ; |ProgramCounter|PilhaPos6~8    ; out              ;
+; |ProgramCounter|PilhaPos6~9    ; |ProgramCounter|PilhaPos6~9    ; out              ;
+; |ProgramCounter|PilhaPos6~10   ; |ProgramCounter|PilhaPos6~10   ; out              ;
+; |ProgramCounter|PilhaPos6~11   ; |ProgramCounter|PilhaPos6~11   ; out              ;
+; |ProgramCounter|PilhaPos6~12   ; |ProgramCounter|PilhaPos6~12   ; out              ;
+; |ProgramCounter|PilhaPos6~13   ; |ProgramCounter|PilhaPos6~13   ; out              ;
+; |ProgramCounter|PilhaPos6~14   ; |ProgramCounter|PilhaPos6~14   ; out              ;
+; |ProgramCounter|PilhaPos6~15   ; |ProgramCounter|PilhaPos6~15   ; out              ;
+; |ProgramCounter|PilhaPos6~16   ; |ProgramCounter|PilhaPos6~16   ; out              ;
+; |ProgramCounter|PilhaPos6~17   ; |ProgramCounter|PilhaPos6~17   ; out              ;
+; |ProgramCounter|PilhaPos6~18   ; |ProgramCounter|PilhaPos6~18   ; out              ;
+; |ProgramCounter|PilhaPos6~19   ; |ProgramCounter|PilhaPos6~19   ; out              ;
+; |ProgramCounter|PilhaPos6~20   ; |ProgramCounter|PilhaPos6~20   ; out              ;
+; |ProgramCounter|PilhaPos6~21   ; |ProgramCounter|PilhaPos6~21   ; out              ;
+; |ProgramCounter|PilhaPos6~22   ; |ProgramCounter|PilhaPos6~22   ; out              ;
+; |ProgramCounter|PilhaPos6~23   ; |ProgramCounter|PilhaPos6~23   ; out              ;
+; |ProgramCounter|PilhaPos6~24   ; |ProgramCounter|PilhaPos6~24   ; out              ;
+; |ProgramCounter|PilhaPos6~25   ; |ProgramCounter|PilhaPos6~25   ; out              ;
+; |ProgramCounter|PilhaPos7~0    ; |ProgramCounter|PilhaPos7~0    ; out              ;
+; |ProgramCounter|PilhaPos7~1    ; |ProgramCounter|PilhaPos7~1    ; out              ;
+; |ProgramCounter|PilhaPos7~2    ; |ProgramCounter|PilhaPos7~2    ; out              ;
+; |ProgramCounter|PilhaPos7~3    ; |ProgramCounter|PilhaPos7~3    ; out              ;
+; |ProgramCounter|PilhaPos7~4    ; |ProgramCounter|PilhaPos7~4    ; out              ;
+; |ProgramCounter|PilhaPos7~5    ; |ProgramCounter|PilhaPos7~5    ; out              ;
+; |ProgramCounter|PilhaPos7~6    ; |ProgramCounter|PilhaPos7~6    ; out              ;
+; |ProgramCounter|PilhaPos7~7    ; |ProgramCounter|PilhaPos7~7    ; out              ;
+; |ProgramCounter|PilhaPos7~8    ; |ProgramCounter|PilhaPos7~8    ; out              ;
+; |ProgramCounter|PilhaPos7~9    ; |ProgramCounter|PilhaPos7~9    ; out              ;
+; |ProgramCounter|PilhaPos7~10   ; |ProgramCounter|PilhaPos7~10   ; out              ;
+; |ProgramCounter|PilhaPos7~11   ; |ProgramCounter|PilhaPos7~11   ; out              ;
+; |ProgramCounter|PilhaPos7~12   ; |ProgramCounter|PilhaPos7~12   ; out              ;
+; |ProgramCounter|PilhaPos7~13   ; |ProgramCounter|PilhaPos7~13   ; out              ;
+; |ProgramCounter|PilhaPos7~14   ; |ProgramCounter|PilhaPos7~14   ; out              ;
+; |ProgramCounter|PilhaPos7~15   ; |ProgramCounter|PilhaPos7~15   ; out              ;
+; |ProgramCounter|PilhaPos7~16   ; |ProgramCounter|PilhaPos7~16   ; out              ;
+; |ProgramCounter|PilhaPos7~17   ; |ProgramCounter|PilhaPos7~17   ; out              ;
+; |ProgramCounter|PilhaPos7~18   ; |ProgramCounter|PilhaPos7~18   ; out              ;
+; |ProgramCounter|PilhaPos7~19   ; |ProgramCounter|PilhaPos7~19   ; out              ;
+; |ProgramCounter|PilhaPos7~20   ; |ProgramCounter|PilhaPos7~20   ; out              ;
+; |ProgramCounter|PilhaPos7~21   ; |ProgramCounter|PilhaPos7~21   ; out              ;
+; |ProgramCounter|PilhaPos7~22   ; |ProgramCounter|PilhaPos7~22   ; out              ;
+; |ProgramCounter|PilhaPos7~23   ; |ProgramCounter|PilhaPos7~23   ; out              ;
+; |ProgramCounter|PilhaPos7~24   ; |ProgramCounter|PilhaPos7~24   ; out              ;
+; |ProgramCounter|PilhaPos7~25   ; |ProgramCounter|PilhaPos7~25   ; out              ;
+; |ProgramCounter|PilhaPos8~0    ; |ProgramCounter|PilhaPos8~0    ; out              ;
+; |ProgramCounter|PilhaPos8~1    ; |ProgramCounter|PilhaPos8~1    ; out              ;
+; |ProgramCounter|PilhaPos8~2    ; |ProgramCounter|PilhaPos8~2    ; out              ;
+; |ProgramCounter|PilhaPos8~3    ; |ProgramCounter|PilhaPos8~3    ; out              ;
+; |ProgramCounter|PilhaPos8~4    ; |ProgramCounter|PilhaPos8~4    ; out              ;
+; |ProgramCounter|PilhaPos8~5    ; |ProgramCounter|PilhaPos8~5    ; out              ;
+; |ProgramCounter|PilhaPos8~6    ; |ProgramCounter|PilhaPos8~6    ; out              ;
+; |ProgramCounter|PilhaPos8~7    ; |ProgramCounter|PilhaPos8~7    ; out              ;
+; |ProgramCounter|PilhaPos8~8    ; |ProgramCounter|PilhaPos8~8    ; out              ;
+; |ProgramCounter|PilhaPos8~9    ; |ProgramCounter|PilhaPos8~9    ; out              ;
+; |ProgramCounter|PilhaPos8~10   ; |ProgramCounter|PilhaPos8~10   ; out              ;
+; |ProgramCounter|PilhaPos8~11   ; |ProgramCounter|PilhaPos8~11   ; out              ;
+; |ProgramCounter|PilhaPos8~12   ; |ProgramCounter|PilhaPos8~12   ; out              ;
+; |ProgramCounter|PilhaPos8~13   ; |ProgramCounter|PilhaPos8~13   ; out              ;
+; |ProgramCounter|PilhaPos8~14   ; |ProgramCounter|PilhaPos8~14   ; out              ;
+; |ProgramCounter|PilhaPos8~15   ; |ProgramCounter|PilhaPos8~15   ; out              ;
+; |ProgramCounter|PilhaPos8~16   ; |ProgramCounter|PilhaPos8~16   ; out              ;
+; |ProgramCounter|PilhaPos8~17   ; |ProgramCounter|PilhaPos8~17   ; out              ;
+; |ProgramCounter|PilhaPos8~18   ; |ProgramCounter|PilhaPos8~18   ; out              ;
+; |ProgramCounter|PilhaPos8~19   ; |ProgramCounter|PilhaPos8~19   ; out              ;
+; |ProgramCounter|PilhaPos8~20   ; |ProgramCounter|PilhaPos8~20   ; out              ;
+; |ProgramCounter|PilhaPos8~21   ; |ProgramCounter|PilhaPos8~21   ; out              ;
+; |ProgramCounter|PilhaPos8~22   ; |ProgramCounter|PilhaPos8~22   ; out              ;
+; |ProgramCounter|PilhaPos8~23   ; |ProgramCounter|PilhaPos8~23   ; out              ;
+; |ProgramCounter|PilhaPos8~24   ; |ProgramCounter|PilhaPos8~24   ; out              ;
+; |ProgramCounter|PilhaPos8~25   ; |ProgramCounter|PilhaPos8~25   ; out              ;
+; |ProgramCounter|PilhaPoped[0]  ; |ProgramCounter|PilhaPoped[0]  ; regout           ;
+; |ProgramCounter|PilhaPos1[12]  ; |ProgramCounter|PilhaPos1[12]  ; regout           ;
+; |ProgramCounter|PilhaPos1[11]  ; |ProgramCounter|PilhaPos1[11]  ; regout           ;
+; |ProgramCounter|PilhaPos1[10]  ; |ProgramCounter|PilhaPos1[10]  ; regout           ;
+; |ProgramCounter|PilhaPos1[9]   ; |ProgramCounter|PilhaPos1[9]   ; regout           ;
+; |ProgramCounter|PilhaPos1[8]   ; |ProgramCounter|PilhaPos1[8]   ; regout           ;
+; |ProgramCounter|PilhaPos1[7]   ; |ProgramCounter|PilhaPos1[7]   ; regout           ;
+; |ProgramCounter|PilhaPos1[6]   ; |ProgramCounter|PilhaPos1[6]   ; regout           ;
+; |ProgramCounter|PilhaPos1[5]   ; |ProgramCounter|PilhaPos1[5]   ; regout           ;
+; |ProgramCounter|PilhaPos1[4]   ; |ProgramCounter|PilhaPos1[4]   ; regout           ;
+; |ProgramCounter|PilhaPos1[3]   ; |ProgramCounter|PilhaPos1[3]   ; regout           ;
+; |ProgramCounter|PilhaPos2[12]  ; |ProgramCounter|PilhaPos2[12]  ; regout           ;
+; |ProgramCounter|PilhaPos2[11]  ; |ProgramCounter|PilhaPos2[11]  ; regout           ;
+; |ProgramCounter|PilhaPos2[10]  ; |ProgramCounter|PilhaPos2[10]  ; regout           ;
+; |ProgramCounter|PilhaPos2[9]   ; |ProgramCounter|PilhaPos2[9]   ; regout           ;
+; |ProgramCounter|PilhaPos2[8]   ; |ProgramCounter|PilhaPos2[8]   ; regout           ;
+; |ProgramCounter|PilhaPos2[7]   ; |ProgramCounter|PilhaPos2[7]   ; regout           ;
+; |ProgramCounter|PilhaPos2[6]   ; |ProgramCounter|PilhaPos2[6]   ; regout           ;
+; |ProgramCounter|PilhaPos2[5]   ; |ProgramCounter|PilhaPos2[5]   ; regout           ;
+; |ProgramCounter|PilhaPos2[4]   ; |ProgramCounter|PilhaPos2[4]   ; regout           ;
+; |ProgramCounter|PilhaPos2[3]   ; |ProgramCounter|PilhaPos2[3]   ; regout           ;
+; |ProgramCounter|PilhaPos2[2]   ; |ProgramCounter|PilhaPos2[2]   ; regout           ;
+; |ProgramCounter|PilhaPos2[1]   ; |ProgramCounter|PilhaPos2[1]   ; regout           ;
+; |ProgramCounter|PilhaPos3[12]  ; |ProgramCounter|PilhaPos3[12]  ; regout           ;
+; |ProgramCounter|PilhaPos3[10]  ; |ProgramCounter|PilhaPos3[10]  ; regout           ;
+; |ProgramCounter|PilhaPos3[9]   ; |ProgramCounter|PilhaPos3[9]   ; regout           ;
+; |ProgramCounter|PilhaPos3[8]   ; |ProgramCounter|PilhaPos3[8]   ; regout           ;
+; |ProgramCounter|PilhaPos3[5]   ; |ProgramCounter|PilhaPos3[5]   ; regout           ;
+; |ProgramCounter|PilhaPos3[3]   ; |ProgramCounter|PilhaPos3[3]   ; regout           ;
+; |ProgramCounter|PilhaPos3[2]   ; |ProgramCounter|PilhaPos3[2]   ; regout           ;
+; |ProgramCounter|PilhaPos3[0]   ; |ProgramCounter|PilhaPos3[0]   ; regout           ;
+; |ProgramCounter|PilhaPos4[12]  ; |ProgramCounter|PilhaPos4[12]  ; regout           ;
+; |ProgramCounter|PilhaPos4[11]  ; |ProgramCounter|PilhaPos4[11]  ; regout           ;
+; |ProgramCounter|PilhaPos4[10]  ; |ProgramCounter|PilhaPos4[10]  ; regout           ;
+; |ProgramCounter|PilhaPos4[9]   ; |ProgramCounter|PilhaPos4[9]   ; regout           ;
+; |ProgramCounter|PilhaPos4[8]   ; |ProgramCounter|PilhaPos4[8]   ; regout           ;
+; |ProgramCounter|PilhaPos4[7]   ; |ProgramCounter|PilhaPos4[7]   ; regout           ;
+; |ProgramCounter|PilhaPos4[6]   ; |ProgramCounter|PilhaPos4[6]   ; regout           ;
+; |ProgramCounter|PilhaPos4[5]   ; |ProgramCounter|PilhaPos4[5]   ; regout           ;
+; |ProgramCounter|PilhaPos4[4]   ; |ProgramCounter|PilhaPos4[4]   ; regout           ;
+; |ProgramCounter|PilhaPos4[3]   ; |ProgramCounter|PilhaPos4[3]   ; regout           ;
+; |ProgramCounter|PilhaPos4[2]   ; |ProgramCounter|PilhaPos4[2]   ; regout           ;
+; |ProgramCounter|PilhaPos4[1]   ; |ProgramCounter|PilhaPos4[1]   ; regout           ;
+; |ProgramCounter|PilhaPos4[0]   ; |ProgramCounter|PilhaPos4[0]   ; regout           ;
+; |ProgramCounter|PilhaPos5[12]  ; |ProgramCounter|PilhaPos5[12]  ; regout           ;
+; |ProgramCounter|PilhaPos5[11]  ; |ProgramCounter|PilhaPos5[11]  ; regout           ;
+; |ProgramCounter|PilhaPos5[10]  ; |ProgramCounter|PilhaPos5[10]  ; regout           ;
+; |ProgramCounter|PilhaPos5[9]   ; |ProgramCounter|PilhaPos5[9]   ; regout           ;
+; |ProgramCounter|PilhaPos5[8]   ; |ProgramCounter|PilhaPos5[8]   ; regout           ;
+; |ProgramCounter|PilhaPos5[7]   ; |ProgramCounter|PilhaPos5[7]   ; regout           ;
+; |ProgramCounter|PilhaPos5[6]   ; |ProgramCounter|PilhaPos5[6]   ; regout           ;
+; |ProgramCounter|PilhaPos5[5]   ; |ProgramCounter|PilhaPos5[5]   ; regout           ;
+; |ProgramCounter|PilhaPos5[4]   ; |ProgramCounter|PilhaPos5[4]   ; regout           ;
+; |ProgramCounter|PilhaPos5[3]   ; |ProgramCounter|PilhaPos5[3]   ; regout           ;
+; |ProgramCounter|PilhaPos5[2]   ; |ProgramCounter|PilhaPos5[2]   ; regout           ;
+; |ProgramCounter|PilhaPos5[1]   ; |ProgramCounter|PilhaPos5[1]   ; regout           ;
+; |ProgramCounter|PilhaPos5[0]   ; |ProgramCounter|PilhaPos5[0]   ; regout           ;
+; |ProgramCounter|PilhaPos6[12]  ; |ProgramCounter|PilhaPos6[12]  ; regout           ;
+; |ProgramCounter|PilhaPos6[11]  ; |ProgramCounter|PilhaPos6[11]  ; regout           ;
+; |ProgramCounter|PilhaPos6[10]  ; |ProgramCounter|PilhaPos6[10]  ; regout           ;
+; |ProgramCounter|PilhaPos6[9]   ; |ProgramCounter|PilhaPos6[9]   ; regout           ;
+; |ProgramCounter|PilhaPos6[8]   ; |ProgramCounter|PilhaPos6[8]   ; regout           ;
+; |ProgramCounter|PilhaPos6[7]   ; |ProgramCounter|PilhaPos6[7]   ; regout           ;
+; |ProgramCounter|PilhaPos6[6]   ; |ProgramCounter|PilhaPos6[6]   ; regout           ;
+; |ProgramCounter|PilhaPos6[5]   ; |ProgramCounter|PilhaPos6[5]   ; regout           ;
+; |ProgramCounter|PilhaPos6[4]   ; |ProgramCounter|PilhaPos6[4]   ; regout           ;
+; |ProgramCounter|PilhaPos6[3]   ; |ProgramCounter|PilhaPos6[3]   ; regout           ;
+; |ProgramCounter|PilhaPos6[2]   ; |ProgramCounter|PilhaPos6[2]   ; regout           ;
+; |ProgramCounter|PilhaPos6[1]   ; |ProgramCounter|PilhaPos6[1]   ; regout           ;
+; |ProgramCounter|PilhaPos6[0]   ; |ProgramCounter|PilhaPos6[0]   ; regout           ;
+; |ProgramCounter|PilhaPos7[12]  ; |ProgramCounter|PilhaPos7[12]  ; regout           ;
+; |ProgramCounter|PilhaPos7[11]  ; |ProgramCounter|PilhaPos7[11]  ; regout           ;
+; |ProgramCounter|PilhaPos7[10]  ; |ProgramCounter|PilhaPos7[10]  ; regout           ;
+; |ProgramCounter|PilhaPos7[9]   ; |ProgramCounter|PilhaPos7[9]   ; regout           ;
+; |ProgramCounter|PilhaPos7[8]   ; |ProgramCounter|PilhaPos7[8]   ; regout           ;
+; |ProgramCounter|PilhaPos7[7]   ; |ProgramCounter|PilhaPos7[7]   ; regout           ;
+; |ProgramCounter|PilhaPos7[6]   ; |ProgramCounter|PilhaPos7[6]   ; regout           ;
+; |ProgramCounter|PilhaPos7[5]   ; |ProgramCounter|PilhaPos7[5]   ; regout           ;
+; |ProgramCounter|PilhaPos7[4]   ; |ProgramCounter|PilhaPos7[4]   ; regout           ;
+; |ProgramCounter|PilhaPos7[3]   ; |ProgramCounter|PilhaPos7[3]   ; regout           ;
+; |ProgramCounter|PilhaPos7[2]   ; |ProgramCounter|PilhaPos7[2]   ; regout           ;
+; |ProgramCounter|PilhaPos7[1]   ; |ProgramCounter|PilhaPos7[1]   ; regout           ;
+; |ProgramCounter|PilhaPos7[0]   ; |ProgramCounter|PilhaPos7[0]   ; regout           ;
+; |ProgramCounter|PilhaPos8[12]  ; |ProgramCounter|PilhaPos8[12]  ; regout           ;
+; |ProgramCounter|PilhaPos8[11]  ; |ProgramCounter|PilhaPos8[11]  ; regout           ;
+; |ProgramCounter|PilhaPos8[10]  ; |ProgramCounter|PilhaPos8[10]  ; regout           ;
+; |ProgramCounter|PilhaPos8[9]   ; |ProgramCounter|PilhaPos8[9]   ; regout           ;
+; |ProgramCounter|PilhaPos8[8]   ; |ProgramCounter|PilhaPos8[8]   ; regout           ;
+; |ProgramCounter|PilhaPos8[7]   ; |ProgramCounter|PilhaPos8[7]   ; regout           ;
+; |ProgramCounter|PilhaPos8[6]   ; |ProgramCounter|PilhaPos8[6]   ; regout           ;
+; |ProgramCounter|PilhaPos8[5]   ; |ProgramCounter|PilhaPos8[5]   ; regout           ;
+; |ProgramCounter|PilhaPos8[4]   ; |ProgramCounter|PilhaPos8[4]   ; regout           ;
+; |ProgramCounter|PilhaPos8[3]   ; |ProgramCounter|PilhaPos8[3]   ; regout           ;
+; |ProgramCounter|PilhaPos8[2]   ; |ProgramCounter|PilhaPos8[2]   ; regout           ;
+; |ProgramCounter|PilhaPos8[1]   ; |ProgramCounter|PilhaPos8[1]   ; regout           ;
+; |ProgramCounter|nextpc_out~0   ; |ProgramCounter|nextpc_out~0   ; out              ;
+; |ProgramCounter|nextpc_out~3   ; |ProgramCounter|nextpc_out~3   ; out              ;
+; |ProgramCounter|nextpc_out~7   ; |ProgramCounter|nextpc_out~7   ; out              ;
+; |ProgramCounter|nextpc_out~9   ; |ProgramCounter|nextpc_out~9   ; out              ;
+; |ProgramCounter|nextpc_out~13  ; |ProgramCounter|nextpc_out~13  ; out              ;
+; |ProgramCounter|nextpc_out~15  ; |ProgramCounter|nextpc_out~15  ; out              ;
+; |ProgramCounter|nextpc_out~16  ; |ProgramCounter|nextpc_out~16  ; out              ;
+; |ProgramCounter|nextpc_out~17  ; |ProgramCounter|nextpc_out~17  ; out              ;
+; |ProgramCounter|nextpc_out~20  ; |ProgramCounter|nextpc_out~20  ; out              ;
+; |ProgramCounter|nextpc_out~22  ; |ProgramCounter|nextpc_out~22  ; out              ;
+; |ProgramCounter|nextpc_out~26  ; |ProgramCounter|nextpc_out~26  ; out              ;
+; |ProgramCounter|nextpc_out~29  ; |ProgramCounter|nextpc_out~29  ; out              ;
+; |ProgramCounter|nextpc_out~33  ; |ProgramCounter|nextpc_out~33  ; out              ;
+; |ProgramCounter|nextpc_out~39  ; |ProgramCounter|nextpc_out~39  ; out              ;
+; |ProgramCounter|nextpc_out~42  ; |ProgramCounter|nextpc_out~42  ; out              ;
+; |ProgramCounter|nextpc_out~46  ; |ProgramCounter|nextpc_out~46  ; out              ;
+; |ProgramCounter|PilhaPos8[0]   ; |ProgramCounter|PilhaPos8[0]   ; regout           ;
+; |ProgramCounter|RegPC[12]      ; |ProgramCounter|RegPC[12]      ; regout           ;
+; |ProgramCounter|RegPC[10]      ; |ProgramCounter|RegPC[10]      ; regout           ;
+; |ProgramCounter|RegPC[9]       ; |ProgramCounter|RegPC[9]       ; regout           ;
+; |ProgramCounter|RegPC[8]       ; |ProgramCounter|RegPC[8]       ; regout           ;
+; |ProgramCounter|RegPC[5]       ; |ProgramCounter|RegPC[5]       ; regout           ;
+; |ProgramCounter|RegPC[3]       ; |ProgramCounter|RegPC[3]       ; regout           ;
+; |ProgramCounter|LathPC[7]      ; |ProgramCounter|LathPC[7]      ; regout           ;
+; |ProgramCounter|LathPC[6]      ; |ProgramCounter|LathPC[6]      ; regout           ;
+; |ProgramCounter|LathPC[5]      ; |ProgramCounter|LathPC[5]      ; regout           ;
+; |ProgramCounter|LathPC[4]      ; |ProgramCounter|LathPC[4]      ; regout           ;
+; |ProgramCounter|LathPC[3]      ; |ProgramCounter|LathPC[3]      ; regout           ;
+; |ProgramCounter|LathPC[2]      ; |ProgramCounter|LathPC[2]      ; regout           ;
+; |ProgramCounter|LathPC[1]      ; |ProgramCounter|LathPC[1]      ; regout           ;
+; |ProgramCounter|process_4~0    ; |ProgramCounter|process_4~0    ; out0             ;
+; |ProgramCounter|LathPC[0]      ; |ProgramCounter|LathPC[0]      ; regout           ;
+; |ProgramCounter|dbus_out[3]~6  ; |ProgramCounter|dbus_out[3]~6  ; out              ;
+; |ProgramCounter|dbus_out[5]~10 ; |ProgramCounter|dbus_out[5]~10 ; out              ;
+; |ProgramCounter|PilhaPoped[1]  ; |ProgramCounter|PilhaPoped[1]  ; regout           ;
+; |ProgramCounter|PilhaPoped[2]  ; |ProgramCounter|PilhaPoped[2]  ; regout           ;
+; |ProgramCounter|PilhaPoped[3]  ; |ProgramCounter|PilhaPoped[3]  ; regout           ;
+; |ProgramCounter|PilhaPoped[4]  ; |ProgramCounter|PilhaPoped[4]  ; regout           ;
+; |ProgramCounter|PilhaPoped[5]  ; |ProgramCounter|PilhaPoped[5]  ; regout           ;
+; |ProgramCounter|PilhaPoped[6]  ; |ProgramCounter|PilhaPoped[6]  ; regout           ;
+; |ProgramCounter|PilhaPoped[7]  ; |ProgramCounter|PilhaPoped[7]  ; regout           ;
+; |ProgramCounter|PilhaPoped[8]  ; |ProgramCounter|PilhaPoped[8]  ; regout           ;
+; |ProgramCounter|PilhaPoped[9]  ; |ProgramCounter|PilhaPoped[9]  ; regout           ;
+; |ProgramCounter|PilhaPoped[10] ; |ProgramCounter|PilhaPoped[10] ; regout           ;
+; |ProgramCounter|PilhaPoped[11] ; |ProgramCounter|PilhaPoped[11] ; regout           ;
+; |ProgramCounter|PilhaPoped[12] ; |ProgramCounter|PilhaPoped[12] ; regout           ;
+; |ProgramCounter|addr_in[0]     ; |ProgramCounter|addr_in[0]     ; out              ;
+; |ProgramCounter|addr_in[1]     ; |ProgramCounter|addr_in[1]     ; out              ;
+; |ProgramCounter|addr_in[2]     ; |ProgramCounter|addr_in[2]     ; out              ;
+; |ProgramCounter|addr_in[3]     ; |ProgramCounter|addr_in[3]     ; out              ;
+; |ProgramCounter|addr_in[4]     ; |ProgramCounter|addr_in[4]     ; out              ;
+; |ProgramCounter|addr_in[5]     ; |ProgramCounter|addr_in[5]     ; out              ;
+; |ProgramCounter|addr_in[6]     ; |ProgramCounter|addr_in[6]     ; out              ;
+; |ProgramCounter|addr_in[7]     ; |ProgramCounter|addr_in[7]     ; out              ;
+; |ProgramCounter|addr_in[8]     ; |ProgramCounter|addr_in[8]     ; out              ;
+; |ProgramCounter|addr_in[9]     ; |ProgramCounter|addr_in[9]     ; out              ;
+; |ProgramCounter|addr_in[10]    ; |ProgramCounter|addr_in[10]    ; out              ;
+; |ProgramCounter|abus_in[0]     ; |ProgramCounter|abus_in[0]     ; out              ;
+; |ProgramCounter|abus_in[2]     ; |ProgramCounter|abus_in[2]     ; out              ;
+; |ProgramCounter|abus_in[4]     ; |ProgramCounter|abus_in[4]     ; out              ;
+; |ProgramCounter|abus_in[5]     ; |ProgramCounter|abus_in[5]     ; out              ;
+; |ProgramCounter|abus_in[6]     ; |ProgramCounter|abus_in[6]     ; out              ;
+; |ProgramCounter|abus_in[7]     ; |ProgramCounter|abus_in[7]     ; out              ;
+; |ProgramCounter|abus_in[8]     ; |ProgramCounter|abus_in[8]     ; out              ;
+; |ProgramCounter|dbus_in[1]     ; |ProgramCounter|dbus_in[1]     ; out              ;
+; |ProgramCounter|dbus_in[4]     ; |ProgramCounter|dbus_in[4]     ; out              ;
+; |ProgramCounter|dbus_in[6]     ; |ProgramCounter|dbus_in[6]     ; out              ;
+; |ProgramCounter|dbus_in[7]     ; |ProgramCounter|dbus_in[7]     ; out              ;
+; |ProgramCounter|nextpc_out[5]  ; |ProgramCounter|nextpc_out[5]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[9]  ; |ProgramCounter|nextpc_out[9]  ; pin_out          ;
+; |ProgramCounter|nextpc_out[12] ; |ProgramCounter|nextpc_out[12] ; pin_out          ;
+; |ProgramCounter|Add0~5         ; |ProgramCounter|Add0~5         ; out0             ;
+; |ProgramCounter|Add0~7         ; |ProgramCounter|Add0~7         ; out0             ;
+; |ProgramCounter|Add0~8         ; |ProgramCounter|Add0~8         ; out0             ;
+; |ProgramCounter|Add0~9         ; |ProgramCounter|Add0~9         ; out0             ;
+; |ProgramCounter|Add0~11        ; |ProgramCounter|Add0~11        ; out0             ;
+; |ProgramCounter|Add0~13        ; |ProgramCounter|Add0~13        ; out0             ;
+; |ProgramCounter|Add0~14        ; |ProgramCounter|Add0~14        ; out0             ;
+; |ProgramCounter|Add0~15        ; |ProgramCounter|Add0~15        ; out0             ;
+; |ProgramCounter|Add0~16        ; |ProgramCounter|Add0~16        ; out0             ;
+; |ProgramCounter|Add0~17        ; |ProgramCounter|Add0~17        ; out0             ;
+; |ProgramCounter|Add0~18        ; |ProgramCounter|Add0~18        ; out0             ;
+; |ProgramCounter|Add0~19        ; |ProgramCounter|Add0~19        ; out0             ;
+; |ProgramCounter|Add0~21        ; |ProgramCounter|Add0~21        ; out0             ;
+; |ProgramCounter|Add0~22        ; |ProgramCounter|Add0~22        ; out0             ;
+; |ProgramCounter|Equal2~0       ; |ProgramCounter|Equal2~0       ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu May 12 16:37:32 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off ProgramCounter -c ProgramCounter
+Info: Using vector source file "C:/Users/vsund/OneDrive/Documentos/Universidade/5 Periodo/Sist. reconfiguraveis/Trabalho Final/PC_Reg/ProgramCounterWave.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of ProgramCounterWave.vwf called ProgramCounter.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      29.28 %
+Info: Number of transitions in simulation is 924
+Info: Vector file ProgramCounterWave.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 142 megabytes
+    Info: Processing ended: Thu May 12 16:37:32 2022
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
