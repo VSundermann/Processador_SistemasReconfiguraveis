@@ -41,11 +41,29 @@ BEGIN
 	PROCESS(all)
 	BEGIN
 	
+	OPtype <= "00";
+	whichOP <= "0000";
+	op_sel <= "0000";
+	bit_sel <= opcode(9 DOWNTO 7);
+	wr_z_en <= '0';
+	wr_c_en <= '0';
+	wr_dc_en <= '0';
+	wr_w_reg_en <= '0';
+	wr_en <= '0';
+	rd_en <= '0';
+	load_pc <= '0';
+	inc_pc <= '0';
+	stack_push <= '0';
+	stack_pop <= '0';
+	lit_sel <= '0';
+	
+	
 	CASE presState IS
 		WHEN rst =>
 			nextState <= fetch_only;
 			
 		WHEN fetch_only =>
+			inc_pc <= '1';
 			nextState <= fetch_dec_ex;
 		
 		WHEN fetch_dec_ex =>
@@ -55,7 +73,7 @@ BEGIN
 			
 			CASE OPtype IS
 			
-				--Operações a byte
+				--OperaÃ§Ãµes a byte
 				WHEN "00" =>
 					whichOP <= opcode(11 DOWNTO 8);
 					
@@ -63,16 +81,19 @@ BEGIN
 					
 						WHEN "0000" => --NoOp // Return // Move W to F
 							op_sel <= "1111";
-							inc_pc <= '1';
 							
-							IF(opcode(7) = '0')THEN --No OP
-								nextState <= fetch_only;
-								
-								IF(opcode(3) = '0')THEN --Checa se é return
-									stack_pop <= '1';
-								END IF;
-							ELSE -- Move W to F
+							IF(opcode(7) = '1')THEN-- Move W to F
+								inc_pc <= '1';
 								wr_en <= '1';
+							ELSE 
+							
+								IF(opcode(3) = '1')THEN --Return
+									stack_pop <= '1';
+									nextState <= fetch_only;
+								ELSE --No OP
+									inc_pc <= '1';
+								END IF;
+								
 							END IF;
 							
 						WHEN "0001" => --Clear F/W
@@ -297,28 +318,25 @@ BEGIN
 							
 					END CASE;
 					
-				--Operações a bit
+				--OperaÃ§Ãµes a bit
 				WHEN "01" =>
 					whichOP <= "00" & opcode(11 DOWNTO 10);
 					
 					CASE whichOP IS
-						WHEN "00" => --Bit Clear F
+						WHEN "0000" => --Bit Clear F
 							op_sel <= "1100";
-							bit_sel <= opcode(9 DOWNTO 7);
 							inc_pc <= '1';
 							wr_en <= '1';
 							rd_en <= '1';
 						
-						WHEN "01" => --Bit Set F
+						WHEN "0001" => --Bit Set F
 							op_sel <= "1101";
-							bit_sel <= opcode(9 DOWNTO 7);
 							inc_pc <= '1';
 							wr_en <= '1';
 							rd_en <= '1';
 							
-						WHEN "10" => -- Bit Test F, skip if clear(0)
+						WHEN "0010" => -- Bit Test F, skip if clear(0)
 							op_sel <= "1100";
-							bit_sel <= opcode(9 DOWNTO 7);
 							inc_pc <= '1';
 							rd_en <= '1';
 							
@@ -327,9 +345,8 @@ BEGIN
 								nextState <= fetch_only;
 							END IF;
 							
-						WHEN "11" => -- Bit Test F, skip if set(1)
+						WHEN "0011" => -- Bit Test F, skip if set(1)
 							op_sel <= "1101";
-							bit_sel <= opcode(9 DOWNTO 7);
 							inc_pc <= '1';
 							rd_en <= '1';
 							
@@ -337,10 +354,11 @@ BEGIN
 							--Mudar estado para fetch only
 							nextState <= fetch_only;
 							END IF;
+						WHEN OTHERS =>
 							
 						END CASE;
 						
-				--Operações de desvio
+				--OperaÃ§Ãµes de desvio
 				WHEN "10" =>
 					IF(opcode(11) = '0')THEN -- Call subroutine
 						nextState <= fetch_only;
@@ -351,18 +369,20 @@ BEGIN
 						load_pc <= '1';
 					END IF;
 					
-				--Operações literais
+				--OperaÃ§Ãµes literais
 				WHEN "11" =>
 					whichOP <= opcode(11 DOWNTO 8);
 					
 					CASE whichOP IS
 						WHEN "0000" | "0001" | "0010" | "0011" => --Move Literal To W
+							op_sel <= "1110";
 							lit_sel <= '1';
 							inc_pc <= '1';
 							wr_w_reg_en <= '1';
 						
 						WHEN "0100" | "0101" | "0110" | "0111" => --Rteurn with Literal in W
 							nextState <= fetch_only;
+							op_sel <= "1110";
 							inc_pc <= '1';
 							lit_sel <= '1';
 							wr_w_reg_en <= '1';
@@ -385,6 +405,8 @@ BEGIN
 							inc_pc <= '1';
 							lit_sel <= '1';
 							wr_w_reg_en <= '1';
+							
+						WHEN "1011" => --No Op
 						
 						WHEN "1100" | "1101" => -- Sub W from Literal
 							op_sel <= "0101";
@@ -399,16 +421,13 @@ BEGIN
 							wr_w_reg_en <= '1';
 						
 					END CASE;
-						
 			END CASE;
-			
 		END CASE;
-			
 	END PROCESS;
 	
 END arch1;
 
--- MUDAR OS ENDEREÇOS DAS PORTS, pagina 18 da documentação
+-- MUDAR OS ENDEREÃ‡OS DAS PORTS, pagina 18 da documentaÃ§Ã£o
 
--- Não fazer essas instruções 
+-- NÃ£o fazer essas instruÃ§Ãµes 
 -- Return from interrupt / Clear watchdog timer / Go into standby mode
